@@ -1,0 +1,16 @@
+@import "./styles/fontface";
+
+.app {
+  display: flex; 
+  justify-content: center;
+  &__heading {
+    font-size: 4.5rem;
+    font-family: "Jeopardy";
+    text-align: center;
+  }
+  &__subheadings {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+}
