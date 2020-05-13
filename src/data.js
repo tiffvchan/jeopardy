@@ -6,7 +6,7 @@ const data = [
         points: 9000,
         question:
           "Name the three gifts given by the Wise Men and the Bible reference.",
-        answer: "Gold, Frankincense, and Myrrh<br/>(Ref: Matthew 2:11)",
+        answer: "Gold, Frankincense, and Myrrh(Ref: Matthew 2:11)",
       },
     ],
   },
@@ -50,20 +50,18 @@ const data = [
     questions: [
       {
         points: 100,
-        question:
-          "These two Gospels do <strong>NOT</strong> account the birth of Jesus.",
+        question: "These two Gospels do account the birth of Jesus.",
         answer: "Mark and John",
       },
       {
         points: 200,
-        question:
-          "How did the shepherds learn of Christ's birth?<br><ul><li>A new star in the sky</li><li>The magi told them</li><li>An angel appeared to them</li><li>Shepherds don’t exist</li></ul>",
-        answer: "An angel appeared to them<br/>(Ref: Luke 2:8-9)",
+        question: "some question",
+        answer: "some answer",
       },
       {
         points: 300,
         question: "Where was Jesus when the magi came to visit Him?",
-        answer: "In a house<br/>(Ref: Matthew 2:11)",
+        answer: "In a house(Ref: Matthew 2:11)",
       },
       {
         points: 400,
@@ -75,7 +73,7 @@ const data = [
         points: 500,
         question:
           "The magi ask Herod where Christ is to be born. Herod summons his priests and scribes, who know the location of the birth because of the prophecy of this man.",
-        answer: "Micah<br/>(Ref: Micah 5:2 & Matthew 2:6)",
+        answer: "Micah(Ref: Micah 5:2 & Matthew 2:6)",
       },
     ],
   },
@@ -118,7 +116,7 @@ const data = [
       {
         points: 100,
         question:
-          "This many Christmas turkeys were sold in 2013 across the U.K.<br><ul><li>1 million</li><li>10 million</li><li>20 million</li></ul>",
+          "This many Christmas turkeys were sold in 2013 across the U.K.",
         answer: "10 million",
       },
       {

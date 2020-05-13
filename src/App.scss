@@ -8,9 +8,8 @@
     font-family: "Jeopardy";
     text-align: center;
   }
-  &__subheadings {
+  &__cards {
     display: flex;
-    width: 100vw;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
