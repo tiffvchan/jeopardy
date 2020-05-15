@@ -11,7 +11,7 @@ const data = [
     ],
   },
   {
-    category: "Pop Culture",
+    category: "Category 1",
     questions: [
       {
         points: 100,
@@ -46,7 +46,7 @@ const data = [
     ],
   },
   {
-    category: "Jesus' Birth",
+    category: "Category 2",
     questions: [
       {
         points: 100,
@@ -78,7 +78,7 @@ const data = [
     ],
   },
   {
-    category: "Christmas Carols",
+    category: "Category 3",
     questions: [
       {
         points: 100,
@@ -111,7 +111,7 @@ const data = [
     ],
   },
   {
-    category: "History Tells Us...",
+    category: "Category 4",
     questions: [
       {
         points: 100,
@@ -145,7 +145,7 @@ const data = [
     ],
   },
   {
-    category: "I know what you did last Sunday!",
+    category: "Category 5",
     questions: [
       {
         points: 100,
