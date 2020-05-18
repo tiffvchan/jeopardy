@@ -12,24 +12,11 @@ let finalJeopardy = data.splice(0, 1);
 
 function App() {
   const [categories, setCategories] = useState(loadCards);
-  const [teams, setTeams] = useState([]);
-
-  useEffect(() => {}, []);
-
-  const submitHandler = (e) => {
-    e.preventDefault();
-    let teamsArr = [];
-    for (let i = 0; i < parseInt(e.target.numberTeams.value); i++) {
-      teamsArr.push("team " + (i + 1));
-    }
-    setTeams(teamsArr);
-    e.target.reset();
-  };
 
   // need reset for categories and for scoreboard
 
   return (
-    <>
+    <div className="app">
       <h1 className="app__heading">BrainStation Jeopardy</h1>
       <div className="app__cards">
         {categories.map((category) => {
@@ -37,8 +24,8 @@ function App() {
         })}
       </div>
 
-      <Scoreboard teams={teams} submitHandler={submitHandler} />
-    </>
+      <Scoreboard />
+    </div>
   );
 }
 

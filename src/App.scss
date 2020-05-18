@@ -1,8 +1,18 @@
 @import "./styles/fontface";
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .app {
   display: flex; 
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
   &__heading {
     font-size: 4.5rem;
     font-family: "Jeopardy";

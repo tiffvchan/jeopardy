@@ -1,0 +1,93 @@
+@import "./variables";
+@import "./fonts";
+
+@mixin link-reset {
+  list-style-type: none;
+  text-decoration: none;
+  color: $white;
+}
+
+// mobile font
+@mixin mb-text-1 {
+  font-size: $mb-h1;
+  line-height: $mb-lh-h1;
+}
+
+@mixin mb-text-2 {
+  font-size: $mb-h2;
+  line-height: $mb-lh-h2;
+}
+
+@mixin mb-text-3 {
+  font-size: $mb-h3;
+  line-height: $mb-lh-h3;
+}
+
+@mixin mb-text-4 {
+  font-size: $mb-h4;
+  line-height: $mb-lh-h4;
+}
+
+@mixin mb-text-5 {
+  font-size: $mb-h5;
+  line-height: $mb-lh-h5;
+}
+
+@mixin mb-text-6 {
+  font-size: $h6;
+  line-height: $lh-h6;
+}
+
+@mixin mb-text-7 {
+  font-size: $h7;
+  line-height: $lh-h7;
+}
+
+@mixin mb-header-lg {
+  font-size: $mb-header-lg;
+}
+
+@mixin text-1 {
+  font-size: $h1;
+  line-height: $lh-h1;
+}
+
+@mixin text-2 {
+  font-size: $h2;
+  line-height: $lh-h2;
+}
+
+@mixin text-3 {
+  font-size: $h3;
+  line-height: $lh-h3;
+}
+
+@mixin text-4 {
+  font-size: $h4;
+  line-height: $lh-h4;
+}
+
+@mixin text-5 {
+  font-size: $h5;
+  line-height: $lh-h5;
+}
+
+@mixin text-6 {
+  font-size: $h6;
+  line-height: $lh-h6;
+}
+
+// flex 
+@mixin flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+// button
+@mixin button-reset {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
