@@ -41,9 +41,9 @@ const Scoreboard = () => {
         teams.length === 0 && (
           <div className="scoreboard scoreboard--form">
             <form onSubmit={submitHandler}>
-              <label htmlFor="app__teams">Enter Number of Teams</label>
+              <label htmlFor="scoreboard__teams">Enter Number of Teams</label>
               <input
-                id="app__teams"
+                id="scoreboard__teams"
                 type="number"
                 name="numberTeams"
                 required
