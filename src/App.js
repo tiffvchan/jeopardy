@@ -13,6 +13,8 @@ let finalJeopardy = data.splice(0, 1);
 function App() {
   const [categories, setCategories] = useState(loadCards);
 
+  console.log("loadCards", loadCards);
+
   // need reset for categories and for scoreboard
 
   return (

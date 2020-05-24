@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./TeamScore.scss";
 
-const TeamScore = ({ teamNumber, teamScore }) => {
-  const [points, setPoints] = useState();
+const TeamScore = ({ teamNumber, teamScore, pointsClickHandler }) => {
+  const [points, setPoints] = useState("");
   const [teamName, setTeamName] = useState("");
 
   const pointsEntered = (e) => {
@@ -16,10 +16,20 @@ const TeamScore = ({ teamNumber, teamScore }) => {
     setTeamName(e.target.name.value);
     e.target.reset();
   };
+
+  const plusClickHandler = () => {
+    console.log("teamNumber", teamNumber);
+    console.log("points", points);
+    pointsClickHandler(teamNumber, points);
+    setPoints("");
+  };
+
+  const minusClickHandler = () => {};
+
   return (
     <>
       <div className="teamscore">
-        <h1 className="teamscore__heading">{teamNumber}</h1>
+        <h1 className="teamscore__heading">Team {teamNumber}</h1>
         {teamName && teamName !== "" ? (
           <h2 className="teamscore__customName">{teamName}</h2>
         ) : (
@@ -33,9 +43,9 @@ const TeamScore = ({ teamNumber, teamScore }) => {
         )}
 
         <p className="teamscore__score">{teamScore}</p>
-        <button>-</button>
-        <input type="number" onChange={pointsEntered} required />
-        <button>+</button>
+        <button onClick={minusClickHandler}>-</button>
+        <input type="number" value={points} onChange={pointsEntered} required />
+        <button onClick={plusClickHandler}>+</button>
       </div>
     </>
   );
