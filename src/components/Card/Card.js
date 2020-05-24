@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../assets/img/brainstation.png";
-import "./card.scss";
+import "./Card.scss";
 
 const Card = ({ question, points, answer }) => {
   const [status, setStatus] = useState("points");

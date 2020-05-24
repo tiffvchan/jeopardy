@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./teamscore.scss";
+import "./TeamScore.scss";
 
 const TeamScore = ({ teamNumber, teamScore }) => {
   const [points, setPoints] = useState();

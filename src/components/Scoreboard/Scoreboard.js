@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./scoreboard.scss";
+import "./Scoreboard.scss";
 import TeamScore from "../TeamScore/TeamScore";
 
 const Scoreboard = () => {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "../Card/Card";
-import "./category.scss";
+import "./Category.scss";
 
 const Category = ({ category }) => {
   const [flipped, setFlipped] = useState(false);
