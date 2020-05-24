@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import logo from "../../assets/img/brainstation.png";
 import "./Card.scss";
 
-const Card = ({ question, points, answer }) => {
+const Card = ({ question, points, answer, addToRevealed }) => {
   const [status, setStatus] = useState("points");
   const [flipped, setFlipped] = useState(false);
   const [completed, setCompleted] = useState(false);
@@ -15,9 +15,10 @@ const Card = ({ question, points, answer }) => {
     } else if (status === "question") {
       setStatus("answer");
       setFlipped(true);
-    } else {
+    } else if (status === "answer") {
       setStatus("complete");
       setCompleted(true);
+      addToRevealed();
     }
   };
 

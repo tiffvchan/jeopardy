@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "../Card/Card";
 import "./Category.scss";
 
-const Category = ({ category }) => {
+const Category = ({ category, addToRevealed }) => {
   const [flipped, setFlipped] = useState(false);
 
   const handlesFlip = () => {
@@ -29,6 +29,7 @@ const Category = ({ category }) => {
             question={card.question}
             points={card.points}
             answer={card.answer}
+            addToRevealed={addToRevealed}
           />
         );
       })}

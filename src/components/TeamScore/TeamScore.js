@@ -18,13 +18,14 @@ const TeamScore = ({ teamNumber, teamScore, pointsClickHandler }) => {
   };
 
   const plusClickHandler = () => {
-    console.log("teamNumber", teamNumber);
-    console.log("points", points);
     pointsClickHandler(teamNumber, points);
     setPoints("");
   };
 
-  const minusClickHandler = () => {};
+  const minusClickHandler = () => {
+    pointsClickHandler(teamNumber, -points);
+    setPoints("");
+  };
 
   return (
     <>
