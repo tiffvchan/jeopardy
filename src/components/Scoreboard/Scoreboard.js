@@ -39,16 +39,20 @@ const Scoreboard = () => {
         </div>
       ) : (
         teamScores.length === 0 && (
-          <div className="scoreboard scoreboard--form">
-            <form onSubmit={submitHandler}>
-              <label htmlFor="scoreboard__teams">Enter Number of Teams</label>
-              <input
-                id="scoreboard__teams"
-                type="number"
-                name="numberTeams"
-                required
-              />
-              <button type="submit">Enter</button>
+          <div className="scoreboard">
+            <form className="scoreboard__form" onSubmit={submitHandler}>
+              <label className="scoreboard__label">Number of Teams</label>
+              <div className="scoreboard__input-wrap">
+                <input
+                  class="scoreboard__input"
+                  type="number"
+                  name="numberTeams"
+                  required
+                />
+                <button className="scoreboard__form-button" type="submit">
+                  Enter
+                </button>
+              </div>
             </form>
           </div>
         )

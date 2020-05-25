@@ -1,6 +1,7 @@
 @import "../../styles/base";
 
 .category {
+  position: relative;
   @include flex-center-column;
   &__name-wrap{
     @include flex-center;
@@ -12,5 +13,12 @@
   }
   &__name {
     text-align: center;
+  }
+  &__name-img {
+    // width: 70%;
+    // height: 60%;
+    width: 100px;
+    height: 85px;
+    object-fit: cover;
   }
 }

@@ -1,4 +1,4 @@
-@import "./styles/fontface";
+@import "./styles/base";
 
 *,
 *::before,
@@ -8,15 +8,24 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+  color: $white;
+}
+
+// button reset
+button {
+  @include button-reset;
+}
+
 .app {
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
-  // justify-content: center;
+  @include flex-center-column;
   &__heading {
     font-size: 4.5rem;
     font-family: "Jeopardy";
+    color: $white;
     text-align: center;
+    margin: 3% 0;
   }
   &__cards {
     display: flex;

@@ -11,9 +11,17 @@
     height: 100px;
     object-fit: cover;
   }
+  &--front {
+    @include front-card-text;
+    @include card;
+  }
+  &--question {
+    transform: scale(1.5);
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    z-index: 3;
+  }
 }
 
-.card--front {
-  @include front-card-text;
-  @include card;
-}
