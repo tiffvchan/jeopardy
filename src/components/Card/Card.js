@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Flippy, { FrontSide, BackSide } from "react-flippy";
 import logo from "../../assets/img/brainstation.png";
 import "./Card.scss";
 
@@ -8,7 +9,6 @@ const Card = ({ question, points, answer, addToRevealed }) => {
   const [completed, setCompleted] = useState(false);
 
   const handlesClick = () => {
-    console.log("hello");
     if (status === "points") {
       setStatus("question");
       setFlipped(true);
@@ -33,11 +33,14 @@ const Card = ({ question, points, answer, addToRevealed }) => {
           <p className="card__text">{answer}</p>
         </div>
       ) : status === "complete" && completed === true ? (
-        <div className="card card--completed" onClick={handlesClick}>
+        <div
+          className="card card--front card--completed"
+          onClick={handlesClick}
+        >
           <img className="card__image" src={logo} />
         </div>
       ) : (
-        <div className="card card--points" onClick={handlesClick}>
+        <div className="card card--front card--points" onClick={handlesClick}>
           <p className="card__text">{points}</p>
         </div>
       )}

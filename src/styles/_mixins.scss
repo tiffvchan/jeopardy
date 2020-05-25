@@ -1,5 +1,23 @@
 @import "./variables";
-@import "./fonts";
+@import "./fontface";
+
+@mixin mobile {
+  @media screen and (min-width: $mobile){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet){
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop){
+    @content;
+  }
+}
 
 @mixin link-reset {
   list-style-type: none;
@@ -52,13 +70,18 @@
   line-height: $lh-h1;
 }
 
-@mixin text-2 {
+@mixin front-card-text {
+  font-family: "Swiss911";
+  text-shadow: 3px 4px $black;
+  color: $yellow;
   font-size: $h2;
   line-height: $lh-h2;
 }
 
-@mixin text-3 {
-  font-size: $h3;
+@mixin category-text{
+  font-family: "Roboto";
+  color: $white;
+  font-size: $h4;
   line-height: $lh-h3;
 }
 
@@ -83,6 +106,20 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+@mixin flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// card style 
+@mixin card {
+  background: $brainstation-blue;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 // button
