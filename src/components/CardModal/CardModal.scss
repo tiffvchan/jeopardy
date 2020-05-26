@@ -30,15 +30,15 @@
   margin-right: -50% !important;
   transform: translate(-50%, -50%) !important;
   background-color: #1358db !important;
+  cursor: pointer;
 }
 
 .ReactModal__Overlay {
   background-color: rgba(0, 0, 0, 0.6) !important;
   animation: modal-door-enter 1s cubic-bezier(0.4, 0, 0, 1.5);
-}
-
-.test {
-  animation: modal-door-leave 1s cubic-bezier(0.4, 0, 0, 1.5);
+  &--closed {
+    animation: modal-door-leave 1s cubic-bezier(0.4, 0, 0, 1.5);
+  }
 }
 
 .cardmodal{
@@ -53,5 +53,9 @@
     width: 100px;
     height: 100px;
     object-fit: cover;
+    cursor: pointer;
+    &:hover {
+      transform: scale(0.9);
+    }
   }
 }

@@ -7,10 +7,23 @@ const Card = ({ question, points, answer, addToRevealed }) => {
   const [flipped, setFlipped] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [status, setStatus] = useState("points");
 
   const handlesClick = () => {
     setIsOpen(true);
     setFlipped(true);
+  };
+
+  const handlesCardClick = () => {
+    if (status === "points") {
+      setStatus("question");
+    } else if (status === "question") {
+      setStatus("answer");
+    } else if (status === "answer") {
+      setStatus("complete");
+      // setCompleted(true);
+      addToRevealed();
+    }
   };
 
   const closeModal = () => {
@@ -36,6 +49,8 @@ const Card = ({ question, points, answer, addToRevealed }) => {
           question={question}
           answer={answer}
           points={points}
+          handlesCardClick={handlesCardClick}
+          status={status}
           isOpen={isOpen}
           closeModal={closeModal}
           addToRevealed={addToRevealed}

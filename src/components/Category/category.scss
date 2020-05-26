@@ -3,6 +3,7 @@
 .category {
   position: relative;
   @include flex-center-column;
+  cursor: pointer;
   &__name-wrap{
     @include flex-center;
     @include card;

@@ -16,6 +16,7 @@ body {
 // button reset
 button {
   @include button-reset;
+  cursor: pointer;
 }
 
 .app {

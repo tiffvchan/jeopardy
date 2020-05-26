@@ -5,57 +5,25 @@ import "./CardModal.scss";
 
 Modal.setAppElement("#root");
 
-// const modalStyles = {
-//   content: {
-//     position: "absolute",
-//     padding: "0",
-//     top: "40%",
-//     left: "50%",
-//     right: "auto",
-//     bottom: "auto",
-//     marginRight: "-50%",
-//     transform: "translate(-50%, -50%)",
-//     backgroundColor: "#1358db",
-//   },
-//   overlay: {
-//     backgroundColor: "rgba(0, 0, 0, 0.6)",
-//   },
-// };
-
 const CardModal = ({
   question,
   points,
   answer,
   isOpen,
   closeModal,
-  addToRevealed,
+  handlesCardClick,
+  status,
 }) => {
-  const [status, setStatus] = useState("points");
-
-  const handlesCardClick = () => {
-    if (status === "points") {
-      setStatus("question");
-    } else if (status === "question") {
-      setStatus("answer");
-    } else if (status === "answer") {
-      setStatus("complete");
-      // setCompleted(true);
-      addToRevealed();
-    }
-  };
-
-  const modalDoor = useRef();
-
   const closeCardModal = () => {
-    const thingy = document.querySelector(".ReactModal__Overlay");
-    thingy.classList.add("test");
+    const overlay = document.querySelector(".ReactModal__Overlay");
+    overlay.classList.add("ReactModal__Overlay--closed");
     setTimeout(function () {
       closeModal();
     }, 1000);
   };
 
   return (
-    <Modal ref={modalDoor} isOpen={isOpen}>
+    <Modal isOpen={isOpen}>
       <div className="cardmodal cardmodal--question" onClick={handlesCardClick}>
         {status === "points" ? (
           <p className="cardmodal__text">{points}</p>
