@@ -25,7 +25,7 @@ function App() {
   };
 
   useEffect(() => {
-    if (revealed.length === 3) {
+    if (revealed.length === 20) {
       setTimeout(() => {
         setFinalJeopardyStatus(true);
       }, 2000);

@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Modal from "react-modal";
 import logo from "../../assets/img/brainstation.png";
 import "./CardModal.scss";
 
 Modal.setAppElement("#root");
 
-const modalStyles = {
-  content: {
-    position: "absolute",
-    padding: "0",
-    top: "40%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    backgroundColor: "#1358db",
-  },
-  overlay: {
-    backgroundColor: "rgba(0, 0, 0, 0.6)",
-  },
-};
+// const modalStyles = {
+//   content: {
+//     position: "absolute",
+//     padding: "0",
+//     top: "40%",
+//     left: "50%",
+//     right: "auto",
+//     bottom: "auto",
+//     marginRight: "-50%",
+//     transform: "translate(-50%, -50%)",
+//     backgroundColor: "#1358db",
+//   },
+//   overlay: {
+//     backgroundColor: "rgba(0, 0, 0, 0.6)",
+//   },
+// };
 
 const CardModal = ({
   question,
@@ -43,8 +43,19 @@ const CardModal = ({
       addToRevealed();
     }
   };
+
+  const modalDoor = useRef();
+
+  const closeCardModal = () => {
+    const thingy = document.querySelector(".ReactModal__Overlay");
+    thingy.classList.add("test");
+    setTimeout(function () {
+      closeModal();
+    }, 1000);
+  };
+
   return (
-    <Modal isOpen={isOpen} style={modalStyles}>
+    <Modal ref={modalDoor} isOpen={isOpen}>
       <div className="cardmodal cardmodal--question" onClick={handlesCardClick}>
         {status === "points" ? (
           <p className="cardmodal__text">{points}</p>
@@ -54,7 +65,7 @@ const CardModal = ({
           <p className="cardmodal__text">{answer}</p>
         )}
       </div>
-      <img className="cardmodal__image" src={logo} onClick={closeModal} />
+      <img className="cardmodal__image" src={logo} onClick={closeCardModal} />
     </Modal>
   );
 };

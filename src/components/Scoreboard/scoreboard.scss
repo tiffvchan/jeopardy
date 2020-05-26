@@ -2,13 +2,13 @@
 
 .scoreboard {
   @include flex-center;
-  margin-top: 3%;
+  margin-top: $spacing-med;
   width: 100%;
   // border: 2px solid white;
   &__form {
     @include flex-center;
     justify-content: space-evenly;
-    margin: 3%;
+    margin: $spacing-med;
     width: 560px;
     font-size: 30px;
     height: 100%;
