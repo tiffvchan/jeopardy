@@ -26,11 +26,11 @@ const CardModal = ({
     <Modal isOpen={isOpen}>
       <div className="cardmodal cardmodal--question" onClick={handlesCardClick}>
         {status === "points" ? (
-          <p className="cardmodal__text">{points}</p>
+          <p className="cardmodal__text cardmodal__text--points">{points}</p>
         ) : status === "question" ? (
-          <p className="cardmodal__text">{question}</p>
+          <p className="cardmodal__text cardmodal__text--qa">{question}</p>
         ) : (
-          <p className="cardmodal__text">{answer}</p>
+          <p className="cardmodal__text cardmodal__text--qa">{answer}</p>
         )}
       </div>
       <img className="cardmodal__image" src={logo} onClick={closeCardModal} />

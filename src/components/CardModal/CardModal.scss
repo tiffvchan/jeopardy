@@ -4,9 +4,6 @@
   from {
     transform: scale3d(0, 1, 1);
   }
-  // to {
-  //   transform: scale3d(0, 1, 1);
-  // }
 }
 
 @keyframes modal-door-leave {
@@ -56,6 +53,19 @@
     cursor: pointer;
     &:hover {
       transform: scale(0.9);
+    }
+  }
+  &__text {
+    &--points {
+      font-family: "Swiss911";
+      font-size: 200px;
+      text-shadow: 3px 4px $black;
+    }
+    &--qa {
+      font-family: "Korinna";
+      font-size: 40px;
+      text-align: center;
+      padding: 4%;
     }
   }
 }
