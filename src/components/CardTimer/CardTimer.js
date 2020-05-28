@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./CardTimer.scss";
+import timesup from "../../assets/music/times-up.mp3";
 
 const CardTimer = () => {
   const [timer, setTimer] = useState(10);
@@ -19,6 +20,7 @@ const CardTimer = () => {
   return (
     <div className="CardTimer">
       <p className="CardTimer__text">{timer}</p>
+      {timer === "" && <audio autoplay="autoplay" src={timesup}></audio>}
     </div>
   );
 };

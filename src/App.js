@@ -4,6 +4,7 @@ import Category from "./components/Category/Category";
 import FinalJeopardy from "./components/FinalJeopardy/FinalJeopardy";
 import Scoreboard from "./components/Scoreboard/Scoreboard";
 import data from "./data";
+import introMusic from "./assets/music/intro.mp3";
 
 let loadCards = data.splice(1, data.length).map((card) => {
   if (card !== data[0]) return card;
@@ -15,14 +16,18 @@ function App() {
   const [categories, setCategories] = useState(loadCards);
   const [revealed, setRevealed] = useState([]);
   const [finalJeopardyStatus, setFinalJeopardyStatus] = useState(false);
-
-  console.log("loadCards", loadCards);
+  const [playIntro, setPlayIntro] = useState(false);
 
   const addToRevealed = () => {
     const newlyRevealed = [...revealed, revealed.length + 1];
     console.log("newlyRevealed", newlyRevealed);
     setRevealed(newlyRevealed);
   };
+
+  useEffect(() => {
+    // WHEN ACTUALLY LAUNCHING THIS, CHANGE BACK TO SET TRUE
+    setPlayIntro(false);
+  }, []);
 
   useEffect(() => {
     if (revealed.length === 20) {
@@ -51,6 +56,7 @@ function App() {
       )}
 
       <Scoreboard />
+      {playIntro && <audio autoplay="autoplay" src={introMusic}></audio>}
     </div>
   );
 }
