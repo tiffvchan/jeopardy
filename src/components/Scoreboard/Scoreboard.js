@@ -19,7 +19,7 @@ const Scoreboard = () => {
 
   const pointsClickHandler = (teamNumber, points) => {
     let newArr = [...teamScores];
-    newArr[teamNumber - 1] = newArr[teamNumber - 1] + points;
+    newArr[teamNumber - 1] = newArr[teamNumber - 1] + parseInt(points);
     setTeamScores(newArr);
   };
 

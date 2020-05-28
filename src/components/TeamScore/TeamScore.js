@@ -36,17 +36,46 @@ const TeamScore = ({ teamNumber, teamScore, pointsClickHandler }) => {
         ) : (
           <div className="teamscore__customName">
             <form onSubmit={submitName}>
-              <label htmlFor="teamscore__name">Team Name</label>
-              <input id="teamscore__name" type="text" name="name" required />
-              <button type="submit">Enter</button>
+              <div className="teamscore__name-wrap">
+                <label htmlFor="teamscore__name">Team Name</label>
+                <div className="teamscore__input-wrap">
+                  <input
+                    className="teamscore__name-input"
+                    type="text"
+                    name="name"
+                    required
+                  />
+                  <button className="teamscore__button" type="submit">
+                    Enter
+                  </button>
+                </div>
+              </div>
             </form>
           </div>
         )}
 
         <p className="teamscore__score">{teamScore}</p>
-        <button onClick={minusClickHandler}>-</button>
-        <input type="number" value={points} onChange={pointsEntered} required />
-        <button onClick={plusClickHandler}>+</button>
+        <div className="teamscore__score-input-wrap">
+          <button
+            className="teamscore__score-button teamscore__score-button--subtract"
+            onClick={minusClickHandler}
+          >
+            -
+          </button>
+          <input
+            className="teamscore__score-input"
+            type="number"
+            value={points}
+            onChange={pointsEntered}
+            required
+          />
+          <button
+            className="teamscore__score-button"
+            onClick={plusClickHandler}
+          >
+            +
+          </button>
+        </div>
       </div>
     </>
   );

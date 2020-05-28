@@ -21,6 +21,7 @@ button {
 
 .app {
   @include flex-center-column;
+  padding-bottom: $spacing-xl;
   &__heading {
     font-size: 4.5rem;
     font-family: "Jeopardy";

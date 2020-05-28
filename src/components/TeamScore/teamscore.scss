@@ -1,3 +1,62 @@
+@import "../../styles/base";
+
 .teamscore { 
-  border: 2px solid black;
+  @include flex-center-column;
+  margin-right: 3%;
+  width: 200px;
+  &__heading {
+    font-size: 20px;
+  }
+  &__name-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  &__name-input {
+    height: 24px;
+    width: 150px;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    outline: $yellow;
+    border: none;
+    
+  }
+  &__button {
+    height: 24px;
+    width: 40px;
+    background-color: $yellow;
+    border-radius: 5px;
+  }
+  &__score {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 40px;
+    width: 100%;
+    background-color: $brainstation-blue;
+    border-radius: 5px;
+    margin: $spacing-sm 0;
+    text-align: center;
+  }
+  &__score-input {
+    @extend .teamscore__name-input;
+    margin: 0 3%;
+    width: 100px;
+  }
+  &__score-input-wrap {
+    @include flex-center;
+  }
+  &__score-button {
+    line-height: 2px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    min-width: 20px;
+    min-height: 20px;
+    background-color: $yellow;
+    border-radius: 50%;
+    &--subtract {
+      line-height: 1px;
+    }
+  }
 }

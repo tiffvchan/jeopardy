@@ -34,7 +34,7 @@ const Card = ({ question, points, answer, addToRevealed }) => {
     <>
       {!flipped ? (
         <div className="card card--front card--points" onClick={handlesClick}>
-          <p className="card__text">{points}</p>
+          <p className="card__text">{`${points}`}</p>
         </div>
       ) : (
         <div
