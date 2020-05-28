@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Modal from "react-modal";
 import logo from "../../assets/img/brainstation.png";
 import "./CardModal.scss";
+import CardTimer from "../CardTimer/CardTimer";
 
 Modal.setAppElement("#root");
 
@@ -28,7 +29,10 @@ const CardModal = ({
         {status === "points" ? (
           <p className="cardmodal__text cardmodal__text--points">{points}</p>
         ) : status === "question" ? (
-          <p className="cardmodal__text cardmodal__text--qa">{question}</p>
+          <>
+            <p className="cardmodal__text cardmodal__text--qa">{question}</p>
+            <CardTimer />
+          </>
         ) : (
           <p className="cardmodal__text cardmodal__text--qa">{answer}</p>
         )}
