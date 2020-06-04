@@ -4,14 +4,14 @@ import Category from "./components/Category/Category";
 import FinalJeopardy from "./components/FinalJeopardy/FinalJeopardy";
 import Scoreboard from "./components/Scoreboard/Scoreboard";
 import data from "./data";
+import finaljep from "./data";
 import introMusic from "./assets/music/intro.mp3";
 
-let loadCards = data.splice(1, data.length)
 
-let finalJeopardyQ = data.splice(0, 1);
 
 function App() {
-  const [categories, setCategories] = useState(loadCards);
+
+  const [categories, setCategories] = useState(null);
   const [revealed, setRevealed] = useState([]);
   const [finalJeopardyStatus, setFinalJeopardyStatus] = useState(false);
   const [playIntro, setPlayIntro] = useState(false);
@@ -29,27 +29,21 @@ function App() {
   useEffect(() => {
     // WHEN ACTUALLY LAUNCHING THIS, CHANGE BACK TO SET TRUE
     setPlayIntro(false);
-    // Add Daily Doubles at Random
-    
-    let randomCatOne = getRandomInt();
-    let randomCardOne = getRandomInt();
-    let randomCatTwo = getRandomInt();
-    let randomCardTwo = getRandomInt();
 
-    console.log("random cat, cards", randomCatOne, randomCardOne, randomCatTwo, randomCardTwo )
+    let thingy = {}
+    let counter = 0 
+    do {
+      thingy = data[getRandomInt()].questions[getRandomInt()]
+      if (!thingy["dailydouble"]) {
+        thingy["dailydouble"] = true
+        counter++
+      }
+    } while (counter < 2)
 
-    loadCards.forEach (category => {
-      if (loadCards[randomCatOne]) {
-        loadCards[randomCatOne].questions[randomCardOne]["dailydouble"] = true
-      }
-      if (loadCards[randomCatTwo]) {
-        loadCards[randomCatTwo].questions[randomCardTwo]["dailydouble"] = true
-      }
-      return loadCards
-    })
-    console.log("mount did it work", loadCards)
+    setCategories(data);
   }, []);
 
+    console.log("inside if check state", categories);
   useEffect(() => {
     if (revealed.length === 2) {
       setTimeout(() => {
@@ -58,17 +52,18 @@ function App() {
     }
   }, [finalJeopardyStatus, revealed]);
 
-  console.log("finalJepQ", finalJeopardyQ);
   // need reset for categories and for scoreboard
+
+  console.log("categories", categories);
 
   return (
     <div className="app">
       <h1 className="app__heading">BrainStation Jeopardy</h1>
       {finalJeopardyStatus === true ? (
-        <FinalJeopardy finalJeopardyQ={finalJeopardyQ} />
+        <FinalJeopardy finalJeopardyQ={finaljep} />
       ) : (
         <div className="app__cards">
-          {categories.map((category) => {
+          {categories && categories.map((category) => {
             return (
               <Category category={category} addToRevealed={addToRevealed} />
             );

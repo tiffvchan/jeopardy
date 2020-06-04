@@ -34,11 +34,13 @@ const Category = ({ category, addToRevealed }) => {
         </div>
       )}
       {category.questions.map((card) => {
+        console.log("card dailydouble", card)
         return (
           <Card
             question={card.question}
             points={card.points}
             answer={card.answer}
+            dailydouble={card.dailydouble}
             addToRevealed={addToRevealed}
             timerDuration={10}
           />

@@ -14,6 +14,7 @@ const CardModal = ({
   closeModal,
   handlesCardClick,
   status,
+  dailydouble,
   timerDuration
 }) => {
   const closeCardModal = () => {
@@ -27,7 +28,10 @@ const CardModal = ({
   return (
     <Modal isOpen={isOpen}>
       <div className="cardmodal cardmodal--question" onClick={handlesCardClick}>
-        {status === "points" ? (
+        
+        {status === "points" && dailydouble ? (
+          <p className="cardmodal__text cardmodal__text--dailydouble">DAILY DOUBLE</p>
+        ) : status === "points" ? (
           <p className="cardmodal__text cardmodal__text--points">{points}</p>
         ) : status === "question" ? (
           <>

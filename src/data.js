@@ -1,5 +1,4 @@
-const data = [
-  {
+const finaljep = {
     category: "Final Jeopardy",
     questions: [
       {
@@ -9,7 +8,9 @@ const data = [
         answer: "Gold, Frankincense, and Myrrh(Ref: Matthew 2:11)",
       },
     ],
-  },
+  }
+
+const data = [
   {
     category: "Category 1",
     questions: [

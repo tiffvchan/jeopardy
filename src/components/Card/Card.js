@@ -3,19 +3,24 @@ import logo from "../../assets/img/brainstation.png";
 import CardModal from "../CardModal/CardModal";
 import "./Card.scss";
 
-const Card = ({ question, points, answer, addToRevealed, timerDuration }) => {
+const Card = ({ question, points, answer, addToRevealed, timerDuration, dailydouble }) => {
   const [flipped, setFlipped] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [status, setStatus] = useState("points");
+  // const [dailyd, setDailyD] = useState(false)
 
   const handlesClick = () => {
     setIsOpen(true);
     setFlipped(true);
+    // if (dailydouble) {
+    //   setDailyD(true);
+    // }
   };
 
   const handlesCardClick = () => {
-    if (status === "points") {
+    console.log("dailydouble check", dailydouble);
+    if (status === "points" || dailydouble ) {
       setStatus("question");
     } else if (status === "question") {
       setStatus("answer");
@@ -51,6 +56,7 @@ const Card = ({ question, points, answer, addToRevealed, timerDuration }) => {
           points={points}
           handlesCardClick={handlesCardClick}
           status={status}
+          dailydouble={dailydouble}
           isOpen={isOpen}
           closeModal={closeModal}
           addToRevealed={addToRevealed}
