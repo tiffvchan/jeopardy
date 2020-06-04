@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./CardTimer.scss";
 import timesup from "../../assets/music/times-up.mp3";
+import thinkingmusic from "../../assets/music/jeopardythinkmusic.mp3";
 
-const CardTimer = ({timerDuration}) => {
+const CardTimer = ({ timerDuration }) => {
   const [timer, setTimer] = useState(timerDuration);
+  const [finalJep, setFinalJep] = useState(false);
+
+  useEffect(() => {
+    if (timerDuration === 30) {
+      setFinalJep(true);
+    }
+  }, []);
 
   useEffect(() => {
     timer > 0 &&
@@ -20,7 +28,10 @@ const CardTimer = ({timerDuration}) => {
   return (
     <div className="CardTimer">
       <p className="CardTimer__text">{timer}</p>
-      {timer === "" && <audio autoplay="autoplay" src={timesup}></audio>}
+      {!finalJep && timer === "" && (
+        <audio autoplay="autoplay" src={timesup}></audio>
+      )}
+      {finalJep && <audio autoplay="autoplay" src={thinkingmusic}></audio>}
     </div>
   );
 };

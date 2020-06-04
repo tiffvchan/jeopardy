@@ -67,5 +67,9 @@
       text-align: center;
       padding: 4%;
     }
+    &--completed {
+      @extend .cardmodal__text--qa;
+      color: darkslategray;
+    }
   }
 }

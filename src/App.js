@@ -3,14 +3,12 @@ import "./App.scss";
 import Category from "./components/Category/Category";
 import FinalJeopardy from "./components/FinalJeopardy/FinalJeopardy";
 import Scoreboard from "./components/Scoreboard/Scoreboard";
-import data from "./data";
-import finaljep from "./data";
+import data from "./data/data";
+import finaljep from "./data/finaljep";
 import introMusic from "./assets/music/intro.mp3";
 
-
-
 function App() {
-
+  console.log("final jep 1", finaljep);
   const [categories, setCategories] = useState(null);
   const [revealed, setRevealed] = useState([]);
   const [finalJeopardyStatus, setFinalJeopardyStatus] = useState(false);
@@ -24,26 +22,25 @@ function App() {
 
   const getRandomInt = () => {
     return Math.floor(Math.random() * Math.floor(5));
-  }
+  };
 
   useEffect(() => {
     // WHEN ACTUALLY LAUNCHING THIS, CHANGE BACK TO SET TRUE
     setPlayIntro(false);
 
-    let thingy = {}
-    let counter = 0 
+    let thingy = {};
+    let counter = 0;
     do {
-      thingy = data[getRandomInt()].questions[getRandomInt()]
+      thingy = data[getRandomInt()].questions[getRandomInt()];
       if (!thingy["dailydouble"]) {
-        thingy["dailydouble"] = true
-        counter++
+        thingy["dailydouble"] = true;
+        counter++;
       }
-    } while (counter < 2)
+    } while (counter < 2);
 
     setCategories(data);
   }, []);
 
-    console.log("inside if check state", categories);
   useEffect(() => {
     if (revealed.length === 2) {
       setTimeout(() => {
@@ -54,8 +51,6 @@ function App() {
 
   // need reset for categories and for scoreboard
 
-  console.log("categories", categories);
-
   return (
     <div className="app">
       <h1 className="app__heading">BrainStation Jeopardy</h1>
@@ -63,11 +58,12 @@ function App() {
         <FinalJeopardy finalJeopardyQ={finaljep} />
       ) : (
         <div className="app__cards">
-          {categories && categories.map((category) => {
-            return (
-              <Category category={category} addToRevealed={addToRevealed} />
-            );
-          })}
+          {categories &&
+            categories.map((category) => {
+              return (
+                <Category category={category} addToRevealed={addToRevealed} />
+              );
+            })}
         </div>
       )}
 

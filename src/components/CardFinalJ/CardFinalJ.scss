@@ -1,0 +1,16 @@
+@import "../../styles/base";
+
+.cardfinal {
+  @include flex-center-column;
+  background-color: $brainstation-blue;
+  position: relative;
+  height: 400px;
+  width: 600px;
+  cursor: pointer;
+  &--question {
+    font-family: "Korinna";
+    font-size: 40px;
+    text-align: center;
+    padding: 4%;
+  }
+}

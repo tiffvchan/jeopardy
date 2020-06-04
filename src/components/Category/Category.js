@@ -34,7 +34,6 @@ const Category = ({ category, addToRevealed }) => {
         </div>
       )}
       {category.questions.map((card) => {
-        console.log("card dailydouble", card)
         return (
           <Card
             question={card.question}
