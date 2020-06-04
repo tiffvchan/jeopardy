@@ -1,0 +1,527 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200529.110034.5368.0.001.json",
+    "dumpEventTime": "2020-05-29T11:00:34Z",
+    "dumpEventTimeStamp": "1590764434418",
+    "processId": 5368,
+    "cwd": "c:\\Users\\tvkyc\\Documents\\Projects\\BrainStationJeopardy\\bs-jeopardy",
+    "commandLine": [
+      "node",
+      "c:\\Users\\tvkyc\\Documents\\BrainStation\\0-TeachingAssistant\\Pods\\test.js"
+    ],
+    "nodejsVersion": "v12.14.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.14.0",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.14.0/node-v12.14.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.14.0/node-v12.14.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.14.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 142095843,
+        "nice": 0,
+        "sys": 145582796,
+        "idle": 1349821218,
+        "irq": 57246734
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 57111734,
+        "nice": 0,
+        "sys": 48009734,
+        "idle": 1532378031,
+        "irq": 12646640
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 200961250,
+        "nice": 0,
+        "sys": 65380859,
+        "idle": 1371157390,
+        "irq": 2115062
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 100836984,
+        "nice": 0,
+        "sys": 50835187,
+        "idle": 1485827343,
+        "irq": 556343
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 151839062,
+        "nice": 0,
+        "sys": 77247140,
+        "idle": 1408413312,
+        "irq": 1483265
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 72732500,
+        "nice": 0,
+        "sys": 28235843,
+        "idle": 1536531171,
+        "irq": 1029578
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 148412656,
+        "nice": 0,
+        "sys": 61532937,
+        "idle": 1427553906,
+        "irq": 1711343
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 65256250,
+        "nice": 0,
+        "sys": 27308781,
+        "idle": 1544934468,
+        "irq": 760218
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 122938453,
+        "nice": 0,
+        "sys": 65523687,
+        "idle": 1449037343,
+        "irq": 1546875
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 63765843,
+        "nice": 0,
+        "sys": 38967765,
+        "idle": 1534765890,
+        "irq": 968671
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 122607171,
+        "nice": 0,
+        "sys": 79855000,
+        "idle": 1435037328,
+        "irq": 2184421
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 67258359,
+        "nice": 0,
+        "sys": 30409078,
+        "idle": 1539832062,
+        "irq": 659453
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "50:e0:85:f5:a5:e6",
+        "address": "fe80::382b:63cd:cc04:e57e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 5
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "50:e0:85:f5:a5:e6",
+        "address": "192.168.2.120",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "LAPTOP-NT8CR2BA"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff651451729",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff651455b4c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
+    },
+    {
+      "pc": "0x00007ff651454b08",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
+    },
+    {
+      "pc": "0x00007ff65154369b",
+      "symbol": "v8::base::CPU::has_sse+37723"
+    },
+    {
+      "pc": "0x00007ff651d482de",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff651d30321",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff651bfdbec",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff651c08f90",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff651c05ac4",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff651bfb353",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff651bf9b24",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2356"
+    },
+    {
+      "pc": "0x00007ff651c1adf5",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x00007ff651986e19",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+4057"
+    },
+    {
+      "pc": "0x00007ff65217404d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+567949"
+    },
+    {
+      "pc": "0x000001e881ac6299",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2153844736,
+    "totalCommittedMemory": 2153844736,
+    "usedMemory": 1826072120,
+    "availableMemory": 48389424,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 4194304,
+        "capacity": 2094976,
+        "used": 664,
+        "available": 2094312
+      },
+      "old_space": {
+        "memorySize": 2148118528,
+        "committedMemory": 2148118528,
+        "capacity": 1825368216,
+        "used": 1825368216,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 425984,
+        "capacity": 203072,
+        "used": 203072,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 528384,
+        "capacity": 202160,
+        "used": 202160,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 266240,
+        "committedMemory": 266240,
+        "capacity": 262160,
+        "used": 262160,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2094976,
+        "used": 0,
+        "available": 2094976
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 132.593,
+    "kernelCpuSeconds": 16.203,
+    "cpuConsumptionPercent": 145.878,
+    "maxRss": 2276343808,
+    "pageFaults": {
+      "IORequired": 777400,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 1,
+      "writes": 13406127
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "c:\\Users\\tvkyc\\Documents\\Projects\\BrainStationJeopardy\\bs-jeopardy",
+    "add_path": "C:\\tools\\Cmder",
+    "aliases": "C:\\tools\\Cmder\\config\\user_aliases.cmd",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "ANDROID_SDK_HOME": "C:\\Android",
+    "ANSICON": "137x1000 (137x28)",
+    "ANSICON_DEF": "7",
+    "APPDATA": "C:\\Users\\tvkyc\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "architecture": "64",
+    "architecture_bits": "64",
+    "ccall": "call C:\\tools\\Cmder\\vendor\\bin\\cexec.cmd",
+    "cexec": "C:\\tools\\Cmder\\vendor\\bin\\cexec.cmd",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132238663512496856",
+    "ChocolateyToolsLocation": "C:\\tools",
+    "CMDER_ALIASES": "1",
+    "CMDER_CLINK": "1",
+    "CMDER_CONFIGURED": "1",
+    "CMDER_INIT_END": "20:46:49.03",
+    "CMDER_INIT_START": "20:46:47.07",
+    "CMDER_ROOT": "C:\\tools\\Cmder",
+    "CMDER_SHELL": "cmd",
+    "CMDER_USER_FLAGS": " ",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "LAPTOP-NT8CR2BA",
+    "ComSpec": "C:\\Windows\\system32\\cmd.exe",
+    "ConEmuANSI": "ON",
+    "ConEmuAnsiLog": "",
+    "ConEmuArgs": "/Icon \"C:\\tools\\Cmder\\icons\\cmder.ico\" /Title Cmder /dir \"C:\\Users\\tvkyc\\Documents\\Projects\\BrainStationJeopardy\\bs-jeopardy\"",
+    "ConEmuArgs2": "",
+    "ConEmuBackHWND": "0x01510DEA",
+    "ConEmuBaseDir": "C:\\tools\\Cmder\\vendor\\conemu-maximus5\\ConEmu",
+    "ConEmuBaseDirShort": "C:\\tools\\Cmder\\vendor\\conemu-maximus5\\ConEmu",
+    "ConEmuBuild": "191012",
+    "ConEmuCfgDir": "C:\\tools\\Cmder\\vendor\\conemu-maximus5",
+    "ConEmuConfig": "",
+    "ConEmuDir": "C:\\tools\\Cmder\\vendor\\conemu-maximus5",
+    "ConEmuDrawHWND": "0x00CA1100",
+    "ConEmuDrive": "C:",
+    "ConEmuHooks": "Enabled",
+    "ConEmuHWND": "0x01550158",
+    "ConEmuPalette": "Monokai",
+    "ConEmuPID": "39124",
+    "ConEmuServerPID": "15476",
+    "ConEmuTask": "{cmd::Cmder}",
+    "ConEmuWorkDir": "C:\\Users\\tvkyc\\Documents\\Projects\\BrainStationJeopardy\\bs-jeopardy",
+    "ConEmuWorkDrive": "C:",
+    "debug_output": "0",
+    "depth": "1",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ELECTRON_NO_ATTACH_CONSOLE": "1",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "fast_init": "0",
+    "feFlagName": " ",
+    "find_query": "C:\\\\tools\\\\Cmder",
+    "found": "1",
+    "git_executable": "C:\\Program Files\\Git\\cmd\\git.exe",
+    "GIT_INSTALL_ROOT": "C:\\tools\\Cmder\\vendor\\git-for-windows",
+    "git_locale": "\"C:\\Program Files\\Git\\usr\\bin\\locale.exe\"",
+    "GIT_VERSION_USER": "2.25.0.windows.1",
+    "GIT_VERSION_VENDORED": "2.24.1.windows.2",
+    "HOME": "C:\\Users\\tvkyc",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\tvkyc",
+    "LANG": "en_US.UTF-8",
+    "lib_base": "call \"C:\\tools\\Cmder\\vendor\\lib\\lib_base.cmd\"",
+    "lib_console": "call \"C:\\tools\\Cmder\\vendor\\lib\\lib_console.cmd\"",
+    "lib_git": "call \"C:\\tools\\Cmder\\vendor\\lib\\lib_git.cmd\"",
+    "lib_path": "call \"C:\\tools\\Cmder\\vendor\\lib\\lib_path.cmd\"",
+    "lib_profile": "call \"C:\\tools\\Cmder\\vendor\\lib\\lib_profile.cmd\"",
+    "LOCALAPPDATA": "C:\\Users\\tvkyc\\AppData\\Local",
+    "LOGONSERVER": "\\\\LAPTOP-NT8CR2BA",
+    "max_depth": "1",
+    "nix_tools": "1",
+    "NUMBER_OF_PROCESSORS": "12",
+    "OLD_PATH": "C:\\tools\\Cmder\\bin;C:\\tools\\Cmder\\vendor\\bin;C:\\tools\\Cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\tools\\Cmder\\vendor\\conemu-maximus5;C:\\tools\\Cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files (x86)\\Razer Chroma SDK\\bin;C:\\Program Files\\Razer Chroma SDK\\bin;C:\\Program Files (x86)\\Razer\\ChromaBroadcast\\bin;C:\\Program Files\\Razer\\ChromaBroadcast\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Android;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Users\\tvkyc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tvkyc\\AppData\\Roaming\\npm;C:\\tools\\Cmder;C:\\Program Files\\MongoDB\\Server\\4.2\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\tools\\Cmder\\vendor\\git-for-windows\\cmd;C:\\tools\\Cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\tools\\Cmder\\vendor\\git-for-windows\\usr\\bin",
+    "OneDrive": "C:\\Users\\tvkyc\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\tvkyc\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\tools\\Cmder\\bin;C:\\tools\\Cmder\\vendor\\bin;C:\\tools\\Cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\tools\\Cmder\\vendor\\conemu-maximus5;C:\\tools\\Cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files (x86)\\Razer Chroma SDK\\bin;C:\\Program Files\\Razer Chroma SDK\\bin;C:\\Program Files (x86)\\Razer\\ChromaBroadcast\\bin;C:\\Program Files\\Razer\\ChromaBroadcast\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Android;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Users\\tvkyc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tvkyc\\AppData\\Roaming\\npm;C:\\tools\\Cmder;C:\\Program Files\\MongoDB\\Server\\4.2\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\tools\\Cmder\\vendor\\git-for-windows\\cmd;C:\\tools\\Cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\tools\\Cmder\\vendor\\git-for-windows\\usr\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "path_position": "append",
+    "PIPE_LOGGING": "true",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "9e0a",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "C\bL\bI\bN\bK\b \b$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SVN_SSH": "C:\\\\Program Files\\\\Git\\\\bin\\\\ssh.exe",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\Windows",
+    "TEMP": "C:\\Users\\tvkyc\\AppData\\Local\\Temp",
+    "TERM": "cygwin",
+    "time_init": "0",
+    "TMP": "C:\\Users\\tvkyc\\AppData\\Local\\Temp",
+    "USERDOMAIN": "LAPTOP-NT8CR2BA",
+    "USERDOMAIN_ROAMINGPROFILE": "LAPTOP-NT8CR2BA",
+    "USERNAME": "tvkyc",
+    "USERPROFILE": "C:\\Users\\tvkyc",
+    "user_aliases": "C:\\tools\\Cmder\\config\\user_aliases.cmd",
+    "USER_BUILD": "windows.1",
+    "USER_MAJOR": "2",
+    "USER_MINOR": "25",
+    "USER_PATCH": "0",
+    "VENDORED_BUILD": "windows.2",
+    "VENDORED_MAJOR": "2",
+    "VENDORED_MINOR": "24",
+    "VENDORED_PATCH": "1",
+    "VERBOSE_LOGGING": "true",
+    "verbose_output": "0",
+    "VSCODE_CLI": "1",
+    "VSCODE_CWD": "C:\\Users\\tvkyc\\Documents\\Projects\\BrainStationJeopardy\\bs-jeopardy",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "\\\\.\\pipe\\b723bb08c9684a9026b25052cde34506-1.45.1-main-sock",
+    "VSCODE_IPC_HOOK_EXTHOST": "\\\\.\\pipe\\vscode-ipc-79f98738-df0e-498f-8f9d-ca8b5ac23521-sock",
+    "VSCODE_LOGS": "C:\\Users\\tvkyc\\AppData\\Roaming\\Code\\logs\\20200527T204736",
+    "VSCODE_LOG_STACK": "false",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"en-us\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "VSCODE_NODE_CACHED_DATA_DIR": "C:\\Users\\tvkyc\\AppData\\Roaming\\Code\\CachedData\\5763d909d5f12fe19f215cbfdd29a91c0fa9208a",
+    "VSCODE_PID": "47108",
+    "windir": "C:\\Windows"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\System32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\System32\\profapi.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\winmmbase.dll",
+    "C:\\Windows\\System32\\cfgmgr32.dll",
+    "C:\\Windows\\System32\\bcryptPrimitives.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\System32\\powrprof.dll",
+    "C:\\Windows\\System32\\UMPDC.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\kernel.appcore.dll",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\wshbth.dll"
+  ]
+}

@@ -40,6 +40,7 @@ const Category = ({ category, addToRevealed }) => {
             points={card.points}
             answer={card.answer}
             addToRevealed={addToRevealed}
+            timerDuration={10}
           />
         );
       })}

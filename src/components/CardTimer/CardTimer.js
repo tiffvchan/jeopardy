@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./CardTimer.scss";
 import timesup from "../../assets/music/times-up.mp3";
 
-const CardTimer = () => {
-  const [timer, setTimer] = useState(10);
+const CardTimer = ({timerDuration}) => {
+  const [timer, setTimer] = useState(timerDuration);
 
   useEffect(() => {
     timer > 0 &&

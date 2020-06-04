@@ -6,9 +6,7 @@ import Scoreboard from "./components/Scoreboard/Scoreboard";
 import data from "./data";
 import introMusic from "./assets/music/intro.mp3";
 
-let loadCards = data.splice(1, data.length).map((card) => {
-  if (card !== data[0]) return card;
-});
+let loadCards = data.splice(1, data.length)
 
 let finalJeopardyQ = data.splice(0, 1);
 
@@ -24,13 +22,36 @@ function App() {
     setRevealed(newlyRevealed);
   };
 
+  const getRandomInt = () => {
+    return Math.floor(Math.random() * Math.floor(5));
+  }
+
   useEffect(() => {
     // WHEN ACTUALLY LAUNCHING THIS, CHANGE BACK TO SET TRUE
     setPlayIntro(false);
+    // Add Daily Doubles at Random
+    
+    let randomCatOne = getRandomInt();
+    let randomCardOne = getRandomInt();
+    let randomCatTwo = getRandomInt();
+    let randomCardTwo = getRandomInt();
+
+    console.log("random cat, cards", randomCatOne, randomCardOne, randomCatTwo, randomCardTwo )
+
+    loadCards.forEach (category => {
+      if (loadCards[randomCatOne]) {
+        loadCards[randomCatOne].questions[randomCardOne]["dailydouble"] = true
+      }
+      if (loadCards[randomCatTwo]) {
+        loadCards[randomCatTwo].questions[randomCardTwo]["dailydouble"] = true
+      }
+      return loadCards
+    })
+    console.log("mount did it work", loadCards)
   }, []);
 
   useEffect(() => {
-    if (revealed.length === 20) {
+    if (revealed.length === 2) {
       setTimeout(() => {
         setFinalJeopardyStatus(true);
       }, 2000);

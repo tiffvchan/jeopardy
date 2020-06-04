@@ -60,7 +60,7 @@ const TeamScore = ({ teamNumber, teamScore, pointsClickHandler }) => {
             className="teamscore__score-button teamscore__score-button--subtract"
             onClick={minusClickHandler}
           >
-            -
+            <p className="teamscore__score-button-text">-</p>
           </button>
           <input
             className="teamscore__score-input"
@@ -73,7 +73,7 @@ const TeamScore = ({ teamNumber, teamScore, pointsClickHandler }) => {
             className="teamscore__score-button"
             onClick={plusClickHandler}
           >
-            +
+            <p className="teamscore__score-button-text">+</p>
           </button>
         </div>
       </div>

@@ -3,7 +3,7 @@ import logo from "../../assets/img/brainstation.png";
 import CardModal from "../CardModal/CardModal";
 import "./Card.scss";
 
-const Card = ({ question, points, answer, addToRevealed }) => {
+const Card = ({ question, points, answer, addToRevealed, timerDuration }) => {
   const [flipped, setFlipped] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -54,6 +54,7 @@ const Card = ({ question, points, answer, addToRevealed }) => {
           isOpen={isOpen}
           closeModal={closeModal}
           addToRevealed={addToRevealed}
+          timerDuration={timerDuration}
         />
       )}
     </>

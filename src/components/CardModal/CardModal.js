@@ -14,6 +14,7 @@ const CardModal = ({
   closeModal,
   handlesCardClick,
   status,
+  timerDuration
 }) => {
   const closeCardModal = () => {
     const overlay = document.querySelector(".ReactModal__Overlay");
@@ -31,7 +32,7 @@ const CardModal = ({
         ) : status === "question" ? (
           <>
             <p className="cardmodal__text cardmodal__text--qa">{question}</p>
-            <CardTimer />
+            <CardTimer timerDuration={timerDuration}/>
           </>
         ) : (
           <p className="cardmodal__text cardmodal__text--qa">{answer}</p>
