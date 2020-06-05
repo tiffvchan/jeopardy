@@ -6,11 +6,18 @@
   position: relative;
   height: 400px;
   width: 600px;
+  border-radius: 5px;
   cursor: pointer;
-  &--question {
+  &--question, &--answer {
     font-family: "Korinna";
     font-size: 40px;
     text-align: center;
     padding: 4%;
+  }
+  &__text{
+    &--category {
+      @include category-text;
+      font-size: 40px;
+    }
   }
 }

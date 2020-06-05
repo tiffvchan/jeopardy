@@ -14,9 +14,6 @@ const Category = ({ category, addToRevealed }) => {
     <div className="category">
       {flipped === false ? (
         <div className="category__name-wrap">
-          {/* <h2 className="category__name" onClick={handlesFlip}>
-            Category
-          </h2> */}
           <img
             className="category__name-img"
             src={whitelogo}

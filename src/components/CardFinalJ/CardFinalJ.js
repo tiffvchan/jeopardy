@@ -6,11 +6,6 @@ const CardFinalJ = ({ finalJeopardyQ }) => {
   console.log("final jeopardy q", finalJeopardyQ);
   const [status, setStatus] = useState("category");
 
-  // const handlesClick = () => {
-  //   setIsOpen(true);
-  //   setFlipped(true);
-  // };
-
   const handlesClick = () => {
     if (status === "category") {
       setStatus("question");
@@ -18,18 +13,16 @@ const CardFinalJ = ({ finalJeopardyQ }) => {
       setStatus("timer");
     } else if (status === "timer") {
       setStatus("answer");
-    } else if (status === "answer") {
-      setStatus("complete");
     }
   };
-
-  // WHEN YOU MAKE THE CARD, PASS A DIFFERENT TIMER DURATION ... LONGER COUNT THE SONG
 
   return (
     <>
       {status === "category" ? (
         <div className="cardfinal cardfinal--category" onClick={handlesClick}>
-          <p className="cardfinal__text">{finalJeopardyQ.category}</p>
+          <p className="cardfinal__text cardfinal__text--category">
+            {finalJeopardyQ.category.toUpperCase()}
+          </p>
         </div>
       ) : status === "question" ? (
         <div className="cardfinal cardfinal--question" onClick={handlesClick}>
@@ -38,7 +31,10 @@ const CardFinalJ = ({ finalJeopardyQ }) => {
           </p>
         </div>
       ) : status === "timer" ? (
-        <div className="cardfinal cardfinal--timer" onClick={handlesClick}>
+        <div
+          className="cardfinal cardfinal--question cardfinal--timer"
+          onClick={handlesClick}
+        >
           <p className="cardfinal__text">
             {finalJeopardyQ.questions[0].question}
           </p>
@@ -47,7 +43,7 @@ const CardFinalJ = ({ finalJeopardyQ }) => {
       ) : (
         <div className="cardfinal cardfinal--answer" onClick={handlesClick}>
           <p className="cardfinal__text">
-            {finalJeopardyQ.questions[0].question}
+            {finalJeopardyQ.questions[0].answer}
           </p>
         </div>
       )}

@@ -3,6 +3,8 @@ import Modal from "react-modal";
 import logo from "../../assets/img/brainstation.png";
 import "./CardModal.scss";
 import CardTimer from "../CardTimer/CardTimer";
+import dailydoubleimg from "../../assets/img/dailydouble.png";
+import dailydoublesound from "../../assets/music/dailydouble.mp3";
 
 Modal.setAppElement("#root");
 
@@ -29,12 +31,21 @@ const CardModal = ({
     <Modal isOpen={isOpen}>
       <div className="cardmodal cardmodal--question" onClick={handlesCardClick}>
         {status === "points" && dailydouble ? (
-          <p className="cardmodal__text cardmodal__text--dailydouble">
-            DAILY DOUBLE
-          </p>
+          <>
+            <img
+              className="cardmodal__dailydouble"
+              alt="dailydouble"
+              src={dailydoubleimg}
+            />
+            <audio autoplay="autoplay" src={dailydoublesound}></audio>
+          </>
         ) : status === "points" ? (
           <p className="cardmodal__text cardmodal__text--points">{points}</p>
         ) : status === "question" ? (
+          <>
+            <p className="cardmodal__text cardmodal__text--qa">{question}</p>
+          </>
+        ) : status === "timer" ? (
           <>
             <p className="cardmodal__text cardmodal__text--qa">{question}</p>
             <CardTimer timerDuration={timerDuration} />

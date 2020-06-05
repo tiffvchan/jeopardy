@@ -8,7 +8,6 @@ import finaljep from "./data/finaljep";
 import introMusic from "./assets/music/intro.mp3";
 
 function App() {
-  console.log("final jep 1", finaljep);
   const [categories, setCategories] = useState(null);
   const [revealed, setRevealed] = useState([]);
   const [finalJeopardyStatus, setFinalJeopardyStatus] = useState(false);
@@ -42,10 +41,10 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (revealed.length === 2) {
+    if (revealed.length === 25) {
       setTimeout(() => {
         setFinalJeopardyStatus(true);
-      }, 2000);
+      }, 2500);
     }
   }, [finalJeopardyStatus, revealed]);
 

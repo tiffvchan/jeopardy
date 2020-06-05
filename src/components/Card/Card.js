@@ -23,13 +23,14 @@ const Card = ({
   const handlesCardClick = () => {
     if (status === "points" || dailydouble) {
       setStatus("question");
-    } else if (status === "question") {
+    }
+    if (status === "question") {
+      setStatus("timer");
+    }
+    if (status === "timer") {
       setStatus("answer");
     }
   };
-  // } else if (status === "answer") {
-  //   setStatus("complete");
-  // }
 
   const closeModal = () => {
     setIsOpen(false);

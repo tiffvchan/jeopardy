@@ -1,12 +1,12 @@
 const data = [
   {
-    category: "Category 1",
+    category: "Oscar Worthy",
     questions: [
       {
         points: 100,
         question:
-          "This reindeer shares a name with a famous symbol of Valentine’s Day.",
-        answer: "Cupid",
+          "The actor that played the fictional character Dr. Emmett Brown in the Back to the Future trilogy",
+        answer: "Skyfall - Adele",
       },
       {
         points: 200,
@@ -23,8 +23,8 @@ const data = [
       {
         points: 400,
         question:
-          "Governor of California, Arnold Schwarzenegger, plays a father who tries to buy a toy for his son in this movie.",
-        answer: "Jingle All the Way",
+          "“After all, tomorrow is another day!” is the last line from this 1939 Oscar winning film.",
+        answer: "Gone with the Wind",
       },
       {
         points: 500,

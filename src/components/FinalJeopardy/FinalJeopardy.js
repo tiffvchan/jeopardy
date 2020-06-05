@@ -6,8 +6,6 @@ const FinalJeopardy = ({ finalJeopardyQ }) => {
     <>
       <CardFinalJ finalJeopardyQ={finalJeopardyQ} />
     </>
-
-    // WHEN YOU MAKE THE CARD, PASS A DIFFERENT TIMER DURATION ... LONGER COUNT THE SONG
   );
 };
 

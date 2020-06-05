@@ -79,7 +79,8 @@
 }
 
 @mixin category-text{
-  font-family: "Roboto";
+  font-family: Helvetica;
+  font-weight: 700;
   color: $white;
   font-size: $h4;
   line-height: $lh-h3;
