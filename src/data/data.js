@@ -6,19 +6,17 @@ const data = [
         points: 100,
         question:
           "The actor that played the fictional character Dr. Emmett Brown in the Back to the Future trilogy",
-        answer: "Skyfall - Adele",
+        answer: "Christopher Lloyd",
       },
       {
         points: 200,
-        question:
-          "Animated 2004 film about a train that carries kids to the North Pole on Christmas Eve.",
-        answer: "Polar Express",
+        question: "The first non-English language film to win best picture.",
+        answer: "Parasite",
       },
       {
         points: 300,
-        question:
-          "Holiday celebrated in Canada, the U.K., and several other British Commonwealth countries on the day after Christmas.",
-        answer: "Boxing Day",
+        question: "The first animated film to be nominated for Best Picture",
+        answer: "Beauty and the Beast",
       },
       {
         points: 400,
@@ -29,140 +27,136 @@ const data = [
       {
         points: 500,
         question:
-          "Actor who plays the thief, Harry Lime, in Home Alone 1 and Home Alone 2.",
-        answer: "Joe Pesci",
+          "With twelve Oscar nominations and three wins, the most nominated male actor in Academy Awards history.",
+        answer: "Jack Nicholson",
       },
     ],
   },
   {
-    category: "Category 2",
+    category: "Who let the Dogs out?",
     questions: [
       {
         points: 100,
-        question: "These two Gospels do account the birth of Jesus.",
-        answer: "Mark and John",
+        question:
+          "The Chihuahua is a breed believed to originate from this country.",
+        answer: "Mexico",
       },
       {
         points: 200,
-        question: "some question",
-        answer: "some answer",
+        question:
+          "The country with the highest pet dog population in the world.",
+        answer: "United States",
       },
       {
         points: 300,
-        question: "Where was Jesus when the magi came to visit Him?",
-        answer: "In a house(Ref: Matthew 2:11)",
+        question: "This breed can run up to 44 miles per hour",
+        answer: "Greyhound",
       },
       {
         points: 400,
         question:
-          "In a dream, an angel tells Joseph to name his child Jesus, for it was prophesied that a virgin would give birth and call her son Immanuel. What does Immanuel mean?",
-        answer: "God With Us",
+          "The fictional dog based on Charles Shulz's childhood dog named Spike.",
+        answer: "Snoopy",
       },
       {
         points: 500,
         question:
-          "The magi ask Herod where Christ is to be born. Herod summons his priests and scribes, who know the location of the birth because of the prophecy of this man.",
-        answer: "Micah(Ref: Micah 5:2 & Matthew 2:6)",
+          "The Russian physiologist who famously conditioned dogs to salivate every time a bell rang.",
+        answer: "Ivan Pavlov",
       },
     ],
   },
   {
-    category: "Category 3",
+    category: "Different, but the Same",
     questions: [
       {
         points: 100,
-        question: "The first seven words to Jingle Bell Rock.",
-        answer: "Jingle Bell, Jingle Bell, Jingle Bell Rock",
+        question: "A medieval farm worker or to browse the internet",
+        answer: "Serf/Surf",
       },
       {
         points: 200,
-        question:
-          'This Christmas hymn’s second verse begins with “O sing, choirs of angels"',
-        answer: "O Come All Ye Faithful",
+        question: "Got up or lines of seats",
+        answer: "Rose/Rows",
       },
       {
         points: 300,
         question:
-          'This Christmas song’s second verse begins with "The cattle are lowing"',
-        answer: "Away in a Manger",
+          "A small bit of land surrounded by water or a small hole for the passage of a shoelace",
+        answer: "Isley/Eyelet",
       },
       {
         points: 400,
-        question: "On the tenth day, my true love gave to me.",
-        answer: "10 Lords-a-Leaping",
+        question: "To require or to work dough",
+        answer: "Need/Knead",
       },
       {
         points: 500,
-        question:
-          "This Christmas carol was composed by Franz Xaver Gruber to lyrics by Joseph Mohr in 1818.",
-        answer: "Silent Night",
+        question: "Fish eggs or the 17th letter in the Greek alphabet",
+        answer: "Roe/Rho",
       },
     ],
   },
   {
-    category: "Category 4",
+    category: "Spice Up Your Life",
     questions: [
       {
         points: 100,
         question:
-          "This many Christmas turkeys were sold in 2013 across the U.K.",
-        answer: "10 million",
+          "A popular soft drink ale is flavored with this spice whose name is from the Sanskrit for horn root.",
+        answer: "Ginger",
       },
       {
         points: 200,
         question:
-          "This Christmas decoration was originally made from strands of silver.",
-        answer: "Tinsel",
+          "Once called Indian saffron because of its yellow color it's used to color cheese & butter.",
+        answer: "Turmeric",
       },
       {
         points: 300,
         question:
-          "This traditional Christmas decoration is actually a parasitic plant.",
-        answer: "Mistletoe",
+          "The smoked Spanish version of this Hungarian spice is made from pimiento peppers dried & smoked over an oak fire.",
+        answer: "Paprika",
       },
       {
         points: 400,
-        question:
-          "This Christmas carol became the first song ever broadcast from space in 1965.",
-        answer: "Jingle Bells",
+        question: "This major ingredient in curry powder also starts with cu.",
+        answer: "Cumin",
       },
       {
         points: 500,
-        question: "Stollen is the traditional fruit cake of this country.",
-        answer: "Germany",
+        question: "This spice is also known as black sugar & sweetroot",
+        answer: "Licorice",
       },
     ],
   },
   {
-    category: "Category 5",
+    category: "Their Debut Albums",
     questions: [
       {
         points: 100,
-        question:
-          "This person had a solo for the BASIC Fellowship's Christmas Choir.",
-        answer: "Brian Tung",
+        question: "2008: 19",
+        answer: "Adele",
       },
       {
         points: 200,
-        question:
-          "Our church is participating in this special offering this month.",
-        answer: "Lottie Moon Christmas Offering",
+        question: "2004: Hot Fuss",
+        answer: "The Killers",
       },
       {
         points: 300,
-        question: "The BASIC Fellowship sang this song last Sunday.",
-        answer: "Joyful, Joyful, We Adore Thee",
+        question: "2001: Is This It",
+        answer: "The Strokes",
       },
       {
         points: 400,
-        question:
-          "In “O little town of Bethlehem” where do the silent stars go by?",
-        answer: "Above the deep and dreamless sleep",
+        question: "2004: The College Dropout",
+        answer: "Kanye West",
       },
       {
         points: 500,
-        question: "What passage was Pastor Steve's sermon based on?",
-        answer: "Matthew 1:18-25",
+        question: "The Fame",
+        answer: "Lady Gaga",
       },
     ],
   },

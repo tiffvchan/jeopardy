@@ -25,7 +25,8 @@ function App() {
 
   useEffect(() => {
     // WHEN ACTUALLY LAUNCHING THIS, CHANGE BACK TO SET TRUE
-    setPlayIntro(false);
+    setPlayIntro(true);
+    // setPlayIntro(false);
 
     let thingy = {};
     let counter = 0;

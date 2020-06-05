@@ -1,11 +1,11 @@
 const finaljep = {
-  category: "Final Jeopardy",
+  category: "The Planets",
   questions: [
     {
       points: 9000,
       question:
-        "Name the three gifts given by the Wise Men and the Bible reference.",
-      answer: "Gold, Frankincense, and Myrrh(Ref: Matthew 2:11)",
+        "It's the densest of the planets in our solar system & the only one not named for a deity.",
+      answer: "Earth",
     },
   ],
 };
