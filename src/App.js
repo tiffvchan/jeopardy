@@ -3,7 +3,7 @@ import "./App.scss";
 import Category from "./components/Category/Category";
 import FinalJeopardy from "./components/FinalJeopardy/FinalJeopardy";
 import Scoreboard from "./components/Scoreboard/Scoreboard";
-import data from "./data/data";
+import data from "./data/dataDummy";
 import finaljep from "./data/finaljep";
 import introMusic from "./assets/music/intro.mp3";
 
@@ -25,8 +25,8 @@ function App() {
 
   useEffect(() => {
     // WHEN ACTUALLY LAUNCHING THIS, CHANGE BACK TO SET TRUE
-    setPlayIntro(true);
-    // setPlayIntro(false);
+    // setPlayIntro(true);
+    setPlayIntro(false);
 
     let thingy = {};
     let counter = 0;
@@ -48,8 +48,6 @@ function App() {
       }, 2500);
     }
   }, [finalJeopardyStatus, revealed]);
-
-  // need reset for categories and for scoreboard
 
   return (
     <div className="app">

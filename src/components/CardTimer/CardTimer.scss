@@ -1,8 +1,9 @@
 @import "../../styles/base";
 
 .CardTimer {
+  position: absolute;
+  bottom: 60px;
   &__text {
-    height: 30px;
-    font-size: 22px;
+    font-size: 45px;
   }
 }

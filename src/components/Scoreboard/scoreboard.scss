@@ -2,9 +2,13 @@
 
 .scoreboard {
   @include flex-center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: $spacing-med;
   width: 750px;
+  @include desktop {
+    width: 95vw;
+  }
   // border: 2px solid white;
   &__form {
     @include flex-center;
