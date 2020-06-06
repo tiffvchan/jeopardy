@@ -43,6 +43,7 @@ const TeamScore = ({ teamNumber, teamScore, pointsClickHandler }) => {
                     className="teamscore__name-input"
                     type="text"
                     name="name"
+                    maxlength="25"
                     required
                   />
                   <button className="teamscore__button" type="submit">

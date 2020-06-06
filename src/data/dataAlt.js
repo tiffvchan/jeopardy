@@ -1,6 +1,6 @@
 const data = [
   {
-    category: "Say it in French!",
+    category: "En français!",
     questions: [
       {
         points: 100,
@@ -35,13 +35,13 @@ const data = [
       {
         points: 100,
         question:
-          "This actor played a teenager born and raised in West Philadelphia.",
+          "This actor played a teenager born and raised in West Philadelphia",
         answer: "Will Smith",
       },
       {
         points: 200,
         question:
-          "This funny lady who played Sue Sylvester on Glee hosts TV's Hollywood Game Night.",
+          "This funny lady who played Sue Sylvester on Glee hosts TV's Hollywood Game Night",
         answer: "Jane Lynch",
       },
       {
@@ -53,13 +53,12 @@ const data = [
       {
         points: 400,
         question:
-          "She's been on TV as a teen detective & a resident of The Good Place.",
+          "She's been on TV as a teen detective & a resident of The Good Place",
         answer: "Kristen Bell",
       },
       {
         points: 500,
-        question:
-          "She plays Joyce Byers in the Netflix Series Stranger Things.",
+        question: "She plays Joyce Byers in the Netflix Series Stranger Things",
         answer: "Winona Ryder",
       },
     ],
@@ -69,92 +68,95 @@ const data = [
     questions: [
       {
         points: 100,
-        question: "_______ makes perfect.",
+        question: "_______ makes perfect",
         answer: "Practice",
       },
       {
         points: 200,
+        question:
+          "Javascript array method that returns the selected elements in an array, as a new array object",
+        answer: "Slice",
+        // rice, sushi
+      },
+      {
+        points: 300,
+        question: "A large muscle on the back of the upper arm",
+        answer: "Tricep",
+      },
+      {
+        points: 400,
+        question: "The person who joins another in carrying out some plan",
+        answer: "Accomplice",
+      },
+      {
+        points: 500,
         question: "A 200th anniversary",
         answer: "A Bicentennial",
       },
+    ],
+  },
+  {
+    category: "“Dropping” Rhymes",
+    questions: [
+      {
+        points: 100,
+        question: "Chocolate sauce is this for ice cream",
+        answer: "A topping",
+      },
+      {
+        points: 200,
+        question: "Browsing outside the store",
+        answer: "Window Shopping",
+      },
       {
         points: 300,
-        question:
-          "A small bit of land surrounded by water or a small hole for the passage of a shoelace",
-        answer: "Isley/Eyelet",
+        question: "This action usually requires a knife and a cutting board",
+        answer: "Chopping",
       },
       {
         points: 400,
-        question: "To require or to work dough",
-        answer: "Need/Knead",
+        question:
+          "A thrilling movie or arterial blockage could be described as this",
+        answer: "Heart-Stopping",
       },
       {
         points: 500,
-        question: "Fish eggs or the 17th letter in the Greek alphabet",
-        answer: "Roe/Rho",
+        question: "Secretly listening to a conversation",
+        answer: "Eavesdropping",
       },
     ],
   },
   {
-    category: "Spice Up Your Life",
+    category: "We Knead the Bread",
     questions: [
       {
         points: 100,
         question:
-          "A popular soft drink ale is flavored with this spice whose name is from the Sanskrit for horn root.",
-        answer: "Ginger",
+          "This microscopic fungus is added to bread dough to make it rise",
+        answer: "Yeast",
       },
       {
         points: 200,
         question:
-          "Once called Indian saffron because of its yellow color it's used to color cheese & butter.",
-        answer: "Turmeric",
+          "This elastic protein that helps bread rise can cause illness in those with celiac disease",
+        answer: "Gluten",
       },
       {
         points: 300,
+        question: "Process in fermentation that allows the bread dough to rise",
+        answer: "Proofing",
+      },
+      {
+        points: 400,
         question:
-          "The smoked Spanish version of this Hungarian spice is made from pimiento peppers dried & smoked over an oak fire.",
-        answer: "Paprika",
-      },
-      {
-        points: 400,
-        question: "This major ingredient in curry powder also starts with cu.",
-        answer: "Cumin",
+          "Common in Germany & Russia black bread is typically made from this grain",
+        answer: "Rye",
       },
       {
         points: 500,
-        question: "This spice is also known as black sugar & sweetroot",
-        answer: "Licorice",
-      },
-    ],
-  },
-  {
-    category: "Their Debut Albums",
-    questions: [
-      {
-        points: 100,
-        question: "2008: 19",
-        answer: "Adele",
-      },
-      {
-        points: 200,
-        question: "2004: Hot Fuss",
-        answer: "The Killers",
-      },
-      {
-        points: 300,
-        question: "2001: Is This It",
-        answer: "The Strokes",
-      },
-      {
-        points: 400,
-        question: "2004: The College Dropout",
-        answer: "Kanye West",
-      },
-      {
-        points: 500,
-        question: "The Fame",
-        answer: "Lady Gaga",
+        question:
+          "This Italian variety was invented in the 80s as a response to the popularity of baguettes",
+        answer: "Ciabatta",
       },
     ],
   },

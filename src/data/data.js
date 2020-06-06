@@ -10,7 +10,7 @@ const data = [
       },
       {
         points: 200,
-        question: "The first non-English language film to win best picture.",
+        question: "The first non-English language film to win best picture",
         answer: "Parasite",
       },
       {
@@ -21,13 +21,13 @@ const data = [
       {
         points: 400,
         question:
-          "“After all, tomorrow is another day!” is the last line from this 1939 Oscar winning film.",
+          "“After all, tomorrow is another day!” is the last line from this 1939 Oscar winning film",
         answer: "Gone with the Wind",
       },
       {
         points: 500,
         question:
-          "With twelve Oscar nominations and three wins, the most nominated male actor in Academy Awards history.",
+          "With twelve Oscar nominations and three wins, the most nominated male actor in Academy Awards history",
         answer: "Jack Nicholson",
       },
     ],
@@ -38,13 +38,13 @@ const data = [
       {
         points: 100,
         question:
-          "The Chihuahua is a breed believed to originate from this country.",
+          "The Chihuahua is a breed believed to originate from this country",
         answer: "Mexico",
       },
       {
         points: 200,
         question:
-          "The country with the highest pet dog population in the world.",
+          "The country with the highest pet dog population in the world",
         answer: "United States",
       },
       {
@@ -55,13 +55,13 @@ const data = [
       {
         points: 400,
         question:
-          "The fictional dog based on Charles Shulz's childhood dog named Spike.",
+          "The fictional dog based on Charles Shulz's childhood dog named Spike",
         answer: "Snoopy",
       },
       {
         points: 500,
         question:
-          "The Russian physiologist who famously conditioned dogs to salivate every time a bell rang.",
+          "The Russian physiologist who famously conditioned dogs to salivate every time a bell rang",
         answer: "Ivan Pavlov",
       },
     ],
@@ -83,7 +83,7 @@ const data = [
         points: 300,
         question:
           "A small bit of land surrounded by water or a small hole for the passage of a shoelace",
-        answer: "Isley/Eyelet",
+        answer: "Islet/Eyelet",
       },
       {
         points: 400,
@@ -103,24 +103,24 @@ const data = [
       {
         points: 100,
         question:
-          "A popular soft drink ale is flavored with this spice whose name is from the Sanskrit for horn root.",
+          "A popular soft drink ale is flavored with this spice whose name is from the Sanskrit for horn root",
         answer: "Ginger",
       },
       {
         points: 200,
         question:
-          "Once called Indian saffron because of its yellow color it's used to color cheese & butter.",
+          "Once called Indian saffron because of its yellow color it's used to color cheese & butter",
         answer: "Turmeric",
       },
       {
         points: 300,
         question:
-          "The smoked Spanish version of this Hungarian spice is made from pimiento peppers dried & smoked over an oak fire.",
+          "The smoked Spanish version of this Hungarian spice is made from pimiento peppers dried & smoked over an oak fire",
         answer: "Paprika",
       },
       {
         points: 400,
-        question: "This major ingredient in curry powder also starts with cu.",
+        question: "This major ingredient in curry powder also starts with cu",
         answer: "Cumin",
       },
       {
@@ -155,7 +155,7 @@ const data = [
       },
       {
         points: 500,
-        question: "The Fame",
+        question: "2008: The Fame",
         answer: "Lady Gaga",
       },
     ],

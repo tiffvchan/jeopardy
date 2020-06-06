@@ -3,7 +3,7 @@ import "./App.scss";
 import Category from "./components/Category/Category";
 import FinalJeopardy from "./components/FinalJeopardy/FinalJeopardy";
 import Scoreboard from "./components/Scoreboard/Scoreboard";
-import data from "./data/dataDummy";
+import data from "./data/dataAlt";
 import finaljep from "./data/finaljep";
 import introMusic from "./assets/music/intro.mp3";
 
