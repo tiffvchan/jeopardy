@@ -27,17 +27,29 @@ const TeamScore = ({ teamNumber, teamScore, pointsClickHandler }) => {
     setPoints("");
   };
 
+  // Reset Team Name
+  const handlesClick = () => {
+    setTeamName("");
+  };
+
   return (
     <>
       <div className="teamscore">
-        <h1 className="teamscore__heading">Team {teamNumber}</h1>
+        {/* <h1 className="teamscore__heading">Team {teamNumber}</h1> */}
         {teamName && teamName !== "" ? (
-          <h2 className="teamscore__customName">{teamName}</h2>
+          <h2 className="teamscore__customName" onClick={handlesClick}>
+            {teamName}
+          </h2>
         ) : (
-          <div className="teamscore__customName">
+          <div className="teamscore__customNamez">
             <form onSubmit={submitName}>
               <div className="teamscore__name-wrap">
-                <label htmlFor="teamscore__name">Team Name</label>
+                <label
+                  className="teamscore__name-label"
+                  htmlFor="teamscore__name"
+                >
+                  Team Name
+                </label>
                 <div className="teamscore__input-wrap">
                   <input
                     className="teamscore__name-input"

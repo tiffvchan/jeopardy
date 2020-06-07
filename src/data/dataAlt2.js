@@ -1,4 +1,4 @@
-const data = [
+const dataAlt2 = [
   {
     category: "Breakfast of Champions",
     questions: [
@@ -168,4 +168,4 @@ const data = [
   },
 ];
 
-export default data;
+export default dataAlt2;

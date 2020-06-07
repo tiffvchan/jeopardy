@@ -43,15 +43,20 @@ const CardModal = ({
           <p className="cardmodal__text cardmodal__text--points">{points}</p>
         ) : status === "question" ? (
           <>
+            <p className="cardmodal__points">{points}</p>
             <p className="cardmodal__text cardmodal__text--qa">{question}</p>
           </>
         ) : status === "timer" ? (
           <>
+            <p className="cardmodal__points">{points}</p>
             <p className="cardmodal__text cardmodal__text--qa">{question}</p>
             <CardTimer timerDuration={timerDuration} />
           </>
         ) : (
-          <p className="cardmodal__text cardmodal__text--qa">{answer}</p>
+          <>
+            <p className="cardmodal__points">{points}</p>
+            <p className="cardmodal__text cardmodal__text--qa">{answer}</p>
+          </>
         )}
       </div>
       <img className="cardmodal__image" src={logo} onClick={closeCardModal} />

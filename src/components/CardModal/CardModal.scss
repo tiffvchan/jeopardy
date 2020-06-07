@@ -72,6 +72,14 @@
       color: darkslategray;
     }
   }
+  &__points {
+    position: absolute;
+    font-family: "Korinna";
+    font-size: 30px;
+    top: 20px;
+    left: 20px;
+    opacity: 50%;
+  }
   &__dailydouble {
     height: 400px;
     width: 600px;

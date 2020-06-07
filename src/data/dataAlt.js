@@ -1,4 +1,4 @@
-const data = [
+const dataAlt = [
   {
     category: "En français!",
     questions: [
@@ -73,10 +73,8 @@ const data = [
       },
       {
         points: 200,
-        question:
-          "Javascript array method that returns the selected elements in an array, as a new array object",
-        answer: "Slice",
-        // rice, sushi
+        question: "Usually seasoned and the main ingredient in maki rolls.",
+        answer: "Rice",
       },
       {
         points: 300,
@@ -162,4 +160,4 @@ const data = [
   },
 ];
 
-export default data;
+export default dataAlt;
