@@ -15,8 +15,6 @@ const Scoreboard = () => {
     e.target.reset();
   };
 
-  console.log("team scores", teamScores);
-
   const pointsClickHandler = (teamNumber, points) => {
     let newArr = [...teamScores];
     newArr[teamNumber - 1] = newArr[teamNumber - 1] + parseInt(points);

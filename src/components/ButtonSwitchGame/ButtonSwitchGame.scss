@@ -1,0 +1,19 @@
+@import "../../styles/base";
+
+.buttonswitchgame {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 2px 0;
+  background: black;
+  border: 2px solid $yellow;
+  color: $yellow;
+  cursor: pointer;
+  &:hover, &__activeGame {
+    background: $yellow;
+    color: black;
+  }
+}
