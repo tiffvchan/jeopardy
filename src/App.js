@@ -53,7 +53,6 @@ function App() {
   };
 
   useEffect(() => {
-    // WHEN ACTUALLY LAUNCHING THIS, CHANGE BACK TO SET TRUE
     setNewGame(0);
   }, []);
 

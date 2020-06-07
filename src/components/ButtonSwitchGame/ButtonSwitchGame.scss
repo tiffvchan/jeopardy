@@ -7,13 +7,13 @@
   height: 40px;
   width: 100px;
   border-radius: 5px;
-  background: $yellow;
   margin: 2px 0;
+  background: black;
+  border: 2px solid $yellow;
+  color: $yellow;
   cursor: pointer;
-  &:hover {
-    background: #e6ad00;
-  }
-  &__activeGame {
-    color: white;
+  &:hover, &__activeGame {
+    background: $yellow;
+    color: black;
   }
 }
