@@ -11,13 +11,13 @@ const finaljep = [
     ],
   },
   {
-    category: "The Planets",
+    category: "Mammals",
     questions: [
       {
         points: 9000,
         question:
-          "It's the densest of the planets in our solar system & the only one not named for a deity",
-        answer: "Earth",
+          "Scientific name Mellivora capensis, this 2-word weasel family member was named “most fearless mammal”",
+        answer: "Honey Badger",
       },
     ],
   },
@@ -44,13 +44,13 @@ const finaljep = [
     ],
   },
   {
-    category: "Mammals",
+    category: "The Planets",
     questions: [
       {
         points: 9000,
         question:
-          "Scientific name Mellivora capensis, this 2-word weasel family member was named “most fearless mammal”",
-        answer: "Honey Badger",
+          "It's the densest of the planets in our solar system & the only one not named for a deity",
+        answer: "Earth",
       },
     ],
   },

@@ -81,7 +81,11 @@ function App() {
           {categories &&
             categories.map((category) => {
               return (
-                <Category category={category} addToRevealed={addToRevealed} />
+                <Category
+                  category={category}
+                  addToRevealed={addToRevealed}
+                  currGame={currGame}
+                />
               );
             })}
         </div>

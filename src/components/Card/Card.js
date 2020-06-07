@@ -10,6 +10,7 @@ const Card = ({
   addToRevealed,
   timerDuration,
   dailydouble,
+  currGame,
 }) => {
   const [flipped, setFlipped] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,12 @@ const Card = ({
     setIsOpen(true);
     setFlipped(true);
   };
+
+  useEffect(() => {
+    setFlipped(false);
+    setIsOpen(false);
+    setStatus("points");
+  }, [currGame]);
 
   const handlesCardClick = () => {
     if (status === "points" || dailydouble) {
