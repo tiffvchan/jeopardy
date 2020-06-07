@@ -3,12 +3,16 @@ import Card from "../Card/Card";
 import "./Category.scss";
 import whitelogo from "../../assets/img/brainstation-white.png";
 
-const Category = ({ category, addToRevealed }) => {
+const Category = ({ category, addToRevealed, currGame }) => {
   const [flipped, setFlipped] = useState(false);
 
   const handlesFlip = () => {
     setFlipped(true);
   };
+
+  useEffect(() => {
+    setFlipped(false);
+  }, [currGame]);
 
   return (
     <div className="category">
@@ -39,6 +43,7 @@ const Category = ({ category, addToRevealed }) => {
             dailydouble={card.dailydouble}
             addToRevealed={addToRevealed}
             timerDuration={10}
+            currGame={currGame}
           />
         );
       })}
