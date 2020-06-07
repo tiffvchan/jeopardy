@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./Scoreboard.scss";
 import TeamScore from "../TeamScore/TeamScore";
+import "./Scoreboard.scss";
 
 const Scoreboard = () => {
   const [teamScores, setTeamScores] = useState([]);
