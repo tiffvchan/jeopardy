@@ -9,10 +9,11 @@ import dataAlt from "./data/dataAlt";
 import dataAlt2 from "./data/dataAlt2";
 import dataAlt3 from "./data/dataAlt3";
 import dataAlt4 from "./data/dataAlt4";
+import dataAlt5 from "./data/dataAlt5";
 import finaljep from "./data/finaljep";
 import introMusic from "./assets/music/intro.mp3";
 
-const gameData = [data, dataAlt, dataAlt2, dataAlt3];
+const gameData = [data, dataAlt, dataAlt2, dataAlt3, dataAlt4, dataAlt5];
 
 function App() {
   const [categories, setCategories] = useState(null);
@@ -32,8 +33,8 @@ function App() {
   };
 
   const setNewGame = (num) => {
-    setPlayIntro(true);
-    // setPlayIntro(false);
+    // setPlayIntro(true);
+    setPlayIntro(false);
     let quest = {};
     let counter = 0;
     do {
@@ -46,7 +47,7 @@ function App() {
 
     // reset state variables
     setRevealed([]);
-
+    setFinalJeopardyStatus(false);
     setCategories(gameData[num]);
     setFinalJepQ(finaljep[num]);
     setCurrGame(num);
@@ -56,19 +57,23 @@ function App() {
     setNewGame(0);
   }, []);
 
-  useEffect(() => {
-    if (revealed.length === 25) {
-      setTimeout(() => {
-        setFinalJeopardyStatus(true);
-      }, 2500);
-    }
-    if (!revealed.length) {
-      setFinalJeopardyStatus(false);
-    }
-  }, [finalJeopardyStatus, revealed]);
+  // useEffect(() => {
+  //   if (revealed.length === 25) {
+  //     setTimeout(() => {
+  //       setFinalJeopardyStatus(true);
+  //     }, 2500);
+  //   }
+  //   if (!revealed.length) {
+  //     setFinalJeopardyStatus(false);
+  //   }
+  // }, [finalJeopardyStatus, revealed]);
 
   const handlesClick = (num) => {
     setNewGame(num);
+  };
+
+  const handlesFinalJepClick = () => {
+    setFinalJeopardyStatus(!finalJeopardyStatus);
   };
 
   return (
@@ -104,6 +109,9 @@ function App() {
           );
         })}
       </div>
+      <button className="app__button-finaljep" onClick={handlesFinalJepClick}>
+        {`${finalJeopardyStatus ? "Back" : "Final Jeopardy"}`}
+      </button>
     </div>
   );
 }

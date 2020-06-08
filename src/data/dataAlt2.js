@@ -110,7 +110,7 @@ const dataAlt2 = [
       {
         points: 200,
         question:
-          "In Super Smash Bros. Ultimate you can choose among many avatars like link Donkey Kong or this fast hedgehog",
+          "In Super Smash Bros. Ultimate you can choose among many avatars like Link, Donkey Kong or this fast hedgehog",
         answer: "Sonic",
       },
       {

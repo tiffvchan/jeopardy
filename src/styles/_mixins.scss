@@ -130,6 +130,16 @@
   outline: none;
 }
 
+@mixin button-secondary {
+  height: 40px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 2px 0;
+  padding: 0 8px;
+}
+
 //keyframe
 
 @keyframes modal-door-enter {

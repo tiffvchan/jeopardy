@@ -38,4 +38,10 @@ button {
     justify-content: space-around;
     width: 750px;
   }
+  &__button-finaljep {
+    @include button-secondary;
+    margin-top: $spacing-med;
+    background-color: $brainstation-blue;
+    color: white;
+  }
 }

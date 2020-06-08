@@ -156,7 +156,7 @@ const dataAlt3 = [
       {
         points: 400,
         question: "Watch the fishies; NON RISK GEL",
-        answer: "SNORKELING",
+        answer: "Snorkeling",
       },
       {
         points: 500,

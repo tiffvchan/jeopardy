@@ -1,167 +1,165 @@
 const dataAlt4 = [
   {
-    category: "CHANGE THIS",
+    category: "From Z to A",
     questions: [
       {
         points: 100,
-        question:
-          "The Heinz website has multiple offerings for this French fry condiment including jalapeno & sriracha styles",
-        answer: "Ketchup",
+        question: "It follows epsilon",
+        answer: "Zeta",
       },
       {
         points: 200,
         question:
-          "Of course there are yellow spicy brown & honey varieties of this to peruse",
-        answer: "Mustard",
+          "Get moving & get fit with this program that combines Latin dance moves with aerobic exercise",
+        answer: "Zumba",
       },
       {
         points: 300,
         question:
-          "Heinz notes that this product is made from 100% cage-free eggs lemon juice oil & vinegar",
-        answer: "Mayonnaise",
+          "Costing a fraction of the price one of the most popular diamond substitutes is cubic this",
+        answer: "Zirconia",
       },
       {
         points: 400,
-        question:
-          "Heinz offers cocktail sauce with a shrimp on the label & this type of sauce with a bit of fried fish on the label",
-        answer: "Tartar Sauce",
+        question: "Its capital is Lusaka",
+        answer: "Zambia",
       },
       {
         points: 500,
         question:
-          "Heinz offers a type of gravy made from savory beef stock with this 2-word French designation",
-        answer: "Au Jus",
+          "This popular garden flower originated as a purplish wildflower that grew in the Mexican deserts",
+        answer: "Zinnia",
       },
     ],
   },
   {
-    category: "An OK Category",
+    category: "Pop Song Overlaps",
     questions: [
       {
         points: 100,
-        question:
-          "Your matching percentage on this dating site is determined by a complicated algorithm",
-        answer: "OK Cupid",
+        question: "Don't Be ____ To Be Kind",
+        answer: "Cruel",
       },
       {
         points: 200,
-        question:
-          "A 2019 New York Times article says this 2-word phrase marks the end of friendly generational relations",
-        answer: "OK Boomer",
+        question: "The Lion Sleeps ____ I'm Yours",
+        answer: "Tonight",
       },
       {
         points: 300,
-        question: "Subterranean Homesick Alien is on this Radiohead album",
-        answer: "OK Computer",
+        question: "Sweet ____ Compares 2 U",
+        answer: "Nothing",
       },
       {
         points: 400,
-        question:
-          "The band that filmed the music video for their song Here it Goes Again on treadmills",
-        answer: "OK GO",
+        question: "Bleeding ____ On The Rocks",
+        answer: "Love",
       },
       {
         points: 500,
-        question: "OK is the two digit state abbreviation for this US State",
-        answer: "Oklahoma",
+        question: "Teenage ____ Police",
+        answer: "Dream",
       },
     ],
   },
   {
-    category: "Baskin-Robbins' 31 OG Flavors",
+    category: "Triple Rhyme Time",
     questions: [
       {
         points: 100,
-        question: "Mais oui this flavor has a nationality in its name",
-        answer: "French Vanilla",
+        question: "A washed haricot vert",
+        answer: "Clean Green Bean",
       },
       {
         points: 200,
         question:
-          "Today there's Jamoca; back in the day it was just plain this beverage",
-        answer: "Coffee",
+          "The mother in a movie about a guy & a girl overcoming obstacles to end up together",
+        answer: "Mom Rom-Com",
       },
       {
         points: 300,
         question:
-          "A Burgundy variety not of grape but of this pitted red fruit ice cream",
-        answer: "Cherry",
+          "Serious stage play about the 44th president & a alpaca relative",
+        answer: "Obama Llama Drama",
       },
       {
         points: 400,
-        question:
-          "There were lemon orange & raspberry types of this frozen fruit juice & cream treat",
-        answer: "Sherbet",
+        question: "A chess piece a day's beginning & a sign of boredom",
+        answer: "Pawn Dawn Yawn",
       },
       {
         points: 500,
         question:
-          "Alphabetically it came between Chocolate Almond & Chocolate Fudge",
-        answer: "Chocolate Chip",
+          "Improved written correspondence from someone who owes you money",
+        answer: "A Better Debtor Letter",
       },
     ],
   },
   {
-    category: "First Name Song Titles",
+    category: "Unusual Animals",
     questions: [
       {
         points: 100,
         question:
-          "Stop! Police! This title woman you don't have to put on the red light",
-        answer: "Roxanne",
+          "The Sphynx cat was selectively bred so that it would have minimal this",
+        answer: "Fur",
       },
       {
         points: 200,
         question:
-          "Lady Gaga titled this song the Spanish version of late designer McQueen's first name",
-        answer: "Alejandro",
+          "As well as a duck bill this Aussie monotreme has a cloaca an organ common in birds",
+        answer: "Platypus",
       },
       {
         points: 300,
         question:
-          "I'm begging darling please! Eric Clapton wrote this love song for Pattie Harrison then wed to Eric's good pal George",
-        answer: "Layla",
+          "The unusual blue blood of the horseshoe type of this is used to detect bacterial toxins & test drugs for purity",
+        answer: "Crab",
       },
       {
         points: 400,
         question:
-          "Originally a song by English indie rock band The Zutons and covered by Amy Winehouse",
-        answer: "Valerie",
+          "Among the few primates with blue eyes are humans & this type of animal",
+        answer: "Lemur",
       },
       {
         points: 500,
-        question: "Plain White T's song about a girl in New York City",
-        answer: "Hey there, Delilah",
+        question:
+          "This 5-letter animal looks like it has some zebra blood but it's actually related to the giraffe",
+        answer: "Okapi",
       },
     ],
   },
   {
-    category: "Anagrammed Hobbies",
+    category: "MMMM!",
     questions: [
       {
         points: 100,
-        question: "Not just for grannies these days: TINT KING",
-        answer: "Knitting",
+        question:
+          "Bocconcini are little balls of this fresh white Italian cheese",
+        answer: "Mozzarella",
       },
       {
         points: 200,
-        question: "Get behind the wheel: TRY POET",
-        answer: "Pottery",
+        question:
+          "This sweet yeast bread is made by arranging small clumps of dough in a pan",
+        answer: "Monkey Bread",
       },
       {
         points: 300,
-        question: "It's what you yeast expect: GRIN WEB",
-        answer: "Brewing",
+        question: "A jam variety particularly loved by Paddington Bear",
+        answer: "Marmalade",
       },
       {
         points: 400,
-        question: "Watch the fishies; NON RISK GEL",
-        answer: "SNORKELING",
+        question:
+          "This sandwich of turkey ham & Swiss cheese is dipped in egg & fried--what could be more delicious?",
+        answer: "Monte Cristo",
       },
       {
         points: 500,
-        question: "Don't let Fluffy see what you're doing; MY DIRT AXE",
-        answer: "Taxidermy",
+        question: "The weird-looking cap tells you it's this kind of mushroom",
+        answer: "Morel",
       },
     ],
   },

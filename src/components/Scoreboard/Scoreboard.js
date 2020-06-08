@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TeamScore from "../TeamScore/TeamScore";
 import "./Scoreboard.scss";
+import resetIcon from "../../assets/icons/reset.svg";
 
 const Scoreboard = () => {
   const [teamScores, setTeamScores] = useState([]);
@@ -21,6 +22,10 @@ const Scoreboard = () => {
     setTeamScores(newArr);
   };
 
+  const resetClickHandler = () => {
+    setTeamScores([]);
+  };
+
   return (
     <>
       {teamScores.length > 0 ? (
@@ -34,6 +39,11 @@ const Scoreboard = () => {
               />
             );
           })}
+          <img
+            className="scoreboard__reset"
+            onClick={resetClickHandler}
+            src={resetIcon}
+          ></img>
         </div>
       ) : (
         teamScores.length === 0 && (

@@ -73,7 +73,7 @@ const dataAlt = [
       },
       {
         points: 200,
-        question: "Usually seasoned and the main ingredient in maki rolls.",
+        question: "Usually seasoned and the main ingredient in sushi.",
         answer: "Rice",
       },
       {

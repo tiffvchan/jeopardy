@@ -15,7 +15,7 @@
     padding: 4%;
   }
   &__text{
-    &--category {
+    &--category, &--final {
       @include category-text;
       font-size: 40px;
     }

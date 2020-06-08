@@ -4,10 +4,12 @@ import CardTimer from "../CardTimer/CardTimer";
 
 const CardFinalJ = ({ finalJeopardyQ }) => {
   console.log("final jeopardy q", finalJeopardyQ);
-  const [status, setStatus] = useState("category");
+  const [status, setStatus] = useState("final");
 
   const handlesClick = () => {
-    if (status === "category") {
+    if (status === "final") {
+      setStatus("category");
+    } else if (status === "category") {
       setStatus("question");
     } else if (status === "question") {
       setStatus("timer");
@@ -18,7 +20,13 @@ const CardFinalJ = ({ finalJeopardyQ }) => {
 
   return (
     <>
-      {status === "category" ? (
+      {status === "final" ? (
+        <div className="cardfinal" onClick={handlesClick}>
+          <p className="cardfinal__text cardfinal__text--final">
+            FINAL JEOPARDY
+          </p>
+        </div>
+      ) : status === "category" ? (
         <div className="cardfinal cardfinal--category" onClick={handlesClick}>
           <p className="cardfinal__text cardfinal__text--category">
             {finalJeopardyQ.category.toUpperCase()}

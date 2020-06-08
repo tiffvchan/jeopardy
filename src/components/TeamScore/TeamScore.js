@@ -41,7 +41,7 @@ const TeamScore = ({ teamNumber, teamScore, pointsClickHandler }) => {
             {teamName}
           </h2>
         ) : (
-          <div className="teamscore__customNamez">
+          <>
             <form onSubmit={submitName}>
               <div className="teamscore__name-wrap">
                 <label
@@ -64,7 +64,7 @@ const TeamScore = ({ teamNumber, teamScore, pointsClickHandler }) => {
                 </div>
               </div>
             </form>
-          </div>
+          </>
         )}
 
         <p className="teamscore__score">{teamScore}</p>
