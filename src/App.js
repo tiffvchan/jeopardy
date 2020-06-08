@@ -33,8 +33,8 @@ function App() {
   };
 
   const setNewGame = (num) => {
-    // setPlayIntro(true);
-    setPlayIntro(false);
+    setPlayIntro(true);
+    // setPlayIntro(false);
     let quest = {};
     let counter = 0;
     do {

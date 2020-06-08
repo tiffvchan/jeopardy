@@ -7,7 +7,6 @@ const TeamScore = ({ teamNumber, teamScore, pointsClickHandler }) => {
 
   const pointsEntered = (e) => {
     e.preventDefault();
-    console.log("input value", e.target.value);
     setPoints(parseInt(e.target.value));
   };
 
