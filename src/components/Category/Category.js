@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "../Card/Card";
-// import "./Category.scss";
+import "./Category.scss";
 import whitelogo from "../../assets/img/brainstation-white.png";
 
 const Category = ({ category, addToRevealed, currGame }) => {
