@@ -33,7 +33,6 @@ function App() {
   };
 
   const setNewGame = (num) => {
-    setPlayIntro(true);
     // setPlayIntro(false);
     let quest = {};
     let counter = 0;
@@ -54,6 +53,7 @@ function App() {
   };
 
   useEffect(() => {
+    setPlayIntro(true);
     setNewGame(0);
   }, []);
 
