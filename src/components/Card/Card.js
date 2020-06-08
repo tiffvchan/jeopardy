@@ -57,7 +57,7 @@ const Card = ({
           className="card card--front card--completed"
           onClick={handlesClick}
         >
-          <img className="card__image" src={logo} />
+          <img className="card__image" alt="logo" src={logo} />
         </div>
       )}
       {isOpen && (

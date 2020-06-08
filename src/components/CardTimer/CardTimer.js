@@ -11,7 +11,7 @@ const CardTimer = ({ timerDuration }) => {
     if (timerDuration === 30) {
       setFinalJep(true);
     }
-  }, []);
+  }, [timerDuration]);
 
   useEffect(() => {
     timer > 0 &&

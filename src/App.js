@@ -57,17 +57,6 @@ function App() {
     setNewGame(0);
   }, []);
 
-  // useEffect(() => {
-  //   if (revealed.length === 25) {
-  //     setTimeout(() => {
-  //       setFinalJeopardyStatus(true);
-  //     }, 2500);
-  //   }
-  //   if (!revealed.length) {
-  //     setFinalJeopardyStatus(false);
-  //   }
-  // }, [finalJeopardyStatus, revealed]);
-
   const handlesClick = (num) => {
     setNewGame(num);
   };

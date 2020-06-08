@@ -19,6 +19,7 @@ const Category = ({ category, addToRevealed, currGame }) => {
       {flipped === false ? (
         <div className="category__name-wrap">
           <img
+            alt="front-logo"
             className="category__name-img"
             src={whitelogo}
             onClick={handlesFlip}

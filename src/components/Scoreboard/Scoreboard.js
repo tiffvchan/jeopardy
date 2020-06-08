@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import TeamScore from "../TeamScore/TeamScore";
 import "./Scoreboard.scss";
 import resetIcon from "../../assets/icons/reset.svg";
@@ -40,6 +40,7 @@ const Scoreboard = () => {
             );
           })}
           <img
+            alt="reset-icon"
             className="scoreboard__reset"
             onClick={resetClickHandler}
             src={resetIcon}

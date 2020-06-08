@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import Modal from "react-modal";
 import logo from "../../assets/img/brainstation.png";
 import "./CardModal.scss";
@@ -59,7 +59,12 @@ const CardModal = ({
           </>
         )}
       </div>
-      <img className="cardmodal__image" src={logo} onClick={closeCardModal} />
+      <img
+        className="cardmodal__image"
+        alt="logo"
+        src={logo}
+        onClick={closeCardModal}
+      />
     </Modal>
   );
 };
