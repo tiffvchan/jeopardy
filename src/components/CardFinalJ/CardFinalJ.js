@@ -3,7 +3,6 @@ import "./CardFinalJ.scss";
 import CardTimer from "../CardTimer/CardTimer";
 
 const CardFinalJ = ({ finalJeopardyQ }) => {
-  console.log("final jeopardy q", finalJeopardyQ);
   const [status, setStatus] = useState("final");
 
   const handlesClick = () => {
