@@ -1,0 +1,57 @@
+@import "../../styles/base";
+
+.scoreboard {
+  @include flex-center;
+  position: relative;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: $spacing-med 0;
+  padding: $spacing-sm 0;
+  width: 750px;
+  @include desktop {
+    width: 65vw;
+  }
+  &__reset {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  &__form {
+    @include flex-center;
+    justify-content: space-evenly;
+    margin: $spacing-med;
+    width: 560px;
+    font-size: 30px;
+    height: 100%;
+  }
+  &__label {
+    font-family: "Jeopardy";
+    font-size: 40px;
+  }
+  &__input-wrap {
+    @include flex-center;
+  }
+  &__input {
+    font-family: "Roboto";
+    font-weight: 700;
+    text-align: center;
+    width: 100px;
+    padding-left: 5px;
+    border-radius: 5px;
+    font-size: 30px;
+  }
+  &__form-button {
+    font-family: "Roboto";
+    font-weight: 700;
+    height: 41px;
+    width: 100px;
+    font-size: 24px;
+    margin-left: $spacing-xs;
+    border-radius: 5px;
+    background-color: $yellow;
+    color: $black;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TeamScore from "../TeamScore/TeamScore";
-// import "./Scoreboard.scss";
+import "./Scoreboard.scss";
 import resetIcon from "../../assets/icons/reset.svg";
 
 const Scoreboard = () => {
