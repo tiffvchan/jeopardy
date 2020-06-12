@@ -4,6 +4,7 @@
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+  margin: 0 $spacing-sm $spacing-sm 0;
   &:hover .buttonswitchgame__double,
   &__activeGame .buttonswitchgame__double {
     background: black;
@@ -26,6 +27,7 @@
   &__activeGame {
     background: $yellow;
     color: black;
+    height: 45px;
   }
   &__double {
     @include flex-center-column;

@@ -10,10 +10,25 @@ import dataAlt2 from "./data/dataAlt2";
 import dataAlt3 from "./data/dataAlt3";
 import dataAlt4 from "./data/dataAlt4";
 import dataAlt5 from "./data/dataAlt5";
+import dataAlt6 from "./data/dataAlt6";
+import dataAlt7 from "./data/dataAlt7";
+import dataAlt8 from "./data/dataAlt8";
+import dataAlt9 from "./data/dataAlt9";
 import finaljep from "./data/finaljep";
 import introMusic from "./assets/music/intro.mp3";
 
-const gameData = [data, dataAlt, dataAlt2, dataAlt3, dataAlt4, dataAlt5];
+const gameData = [
+  data,
+  dataAlt,
+  dataAlt2,
+  dataAlt3,
+  dataAlt4,
+  dataAlt5,
+  dataAlt6,
+  dataAlt7,
+  dataAlt8,
+  dataAlt9,
+];
 
 function App() {
   const [categories, setCategories] = useState(null);
@@ -104,15 +119,17 @@ function App() {
 
       <Scoreboard />
       <div className="app__games">
-        {gameData.map((game, i) => {
-          return (
-            <ButtonSwitchGame
-              gameNum={i}
-              handlesClick={handlesClick}
-              currGame={currGame}
-            />
-          );
-        })}
+        <div className="app__button-wrap">
+          {gameData.map((game, i) => {
+            return (
+              <ButtonSwitchGame
+                gameNum={i}
+                handlesClick={handlesClick}
+                currGame={currGame}
+              />
+            );
+          })}
+        </div>
       </div>
       <button className="app__button-finaljep" onClick={handlesFinalJepClick}>
         {`${finalJeopardyStatus ? "Back" : "Final Jeopardy"}`}

@@ -104,73 +104,71 @@ const dataAlt6 = [
     ],
   },
   {
-    category: "Unusual Animals",
+    category: "Seafood Diet",
     questions: [
       {
         points: 100,
         question:
-          "The Sphynx cat was selectively bred so that it would have minimal this",
-        answer: "Fur",
+          "The sockeye species of this fish is highly prized for canning",
+        answer: "Salmon",
       },
       {
         points: 200,
         question:
-          "As well as a duck bill this Aussie monotreme has a cloaca an organ common in birds",
-        answer: "Platypus",
+          "Probably the first fish raised in captivity the rainbow species of this fish is most commonly found on farms",
+        answer: "Trout",
       },
       {
         points: 300,
         question:
-          "The unusual blue blood of the horseshoe type of this is used to detect bacterial toxins & test drugs for purity",
-        answer: "Crab",
+          "Calamari another name for this mollusk with an edible ink comes from the Latin for writing pen",
+        answer: "Squid",
       },
       {
         points: 400,
-        question:
-          "Among the few primates with blue eyes are humans & this type of animal",
-        answer: "Lemur",
+        question: "Top quality caviar contains less than 5% of this additive",
+        answer: "Salt",
       },
       {
         points: 500,
         question:
-          "This 5-letter animal looks like it has some zebra blood but it's actually related to the giraffe",
-        answer: "Okapi",
+          "Some connoisseurs prefer the flesh of the female spider one of these crustaceans",
+        answer: "Crabs",
       },
     ],
   },
   {
-    category: "MMMM!",
+    category: "Too Hot to Handle",
     questions: [
       {
         points: 100,
-        question:
-          "Bocconcini are little balls of this fresh white Italian cheese",
-        answer: "Mozzarella",
+        question: "It's another name for a frankfurter",
+        answer: "Hot Dog",
       },
       {
         points: 200,
-        question:
-          "This sweet yeast bread is made by arranging small clumps of dough in a pan",
-        answer: "Monkey Bread",
+        question: "A controversial problem or a flaming tuber",
+        answer: "Hot Potato",
       },
       {
         points: 300,
-        question: "A jam variety particularly loved by Paddington Bear",
-        answer: "Marmalade",
+        question:
+          "This category's doing so well it's selling like these pan-fried foods",
+        answer: "Hot Cakes",
       },
       {
         points: 400,
         question:
-          "This sandwich of turkey ham & Swiss cheese is dipped in egg & fried--what could be more delicious?",
-        answer: "Monte Cristo",
+          "Be nice or I'll light the match that's stuck in your shoe in this classic practical joke",
+        answer: "Hot Foot",
       },
       {
         points: 500,
-        question: "The weird-looking cap tells you it's this kind of mushroom",
-        answer: "Morel",
+        question: "Oblong-shaped, intensely cinnamon flavoured candies",
+        answer: "Hot Tamales",
       },
     ],
   },
 ];
 
-export default dataAlt4;
+export default dataAlt6;

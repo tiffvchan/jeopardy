@@ -7,14 +7,20 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  @include desktop {
+    
+    width: 175px;
+  }
   &__image {
-    width: 150px;
     height: 100px;
     object-fit: cover;
   }
   &--front {
     @include front-card-text;
     @include card;
+    // Comment @include front-card-text & Uncomment below to generate answer key
+    // text-align: center;
+    // font-size: 20px;
   }
 
 }

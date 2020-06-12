@@ -77,6 +77,17 @@ const finaljep = [
     ],
   },
   {
+    category: "The English Language",
+    questions: [
+      {
+        points: 9000,
+        question:
+          "The letter of the alphabet that is most frequently used in English",
+        answer: "E",
+      },
+    ],
+  },
+  {
     category: "Compound Words",
     questions: [
       {
