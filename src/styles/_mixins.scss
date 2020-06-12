@@ -19,6 +19,12 @@
   }
 }
 
+@mixin lg-desktop {
+  @media screen and (min-width: $lg-desktop){
+    @content;
+  }
+}
+
 @mixin link-reset {
   list-style-type: none;
   text-decoration: none;
