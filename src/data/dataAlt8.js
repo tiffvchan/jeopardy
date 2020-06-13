@@ -10,7 +10,7 @@ const dataAlt8 = [
       {
         points: 200,
         question:
-          "Also called the hunting leopard it can go 0 to 60 in seconds & it kills with a bite to the neck",
+          "Also called the hunting leopard, it can go 0 to 60 in seconds & it kills with a bite to the neck",
         answer: "Cheetah",
       },
       {
@@ -22,7 +22,7 @@ const dataAlt8 = [
       {
         points: 400,
         question:
-          "New evidence says the whale may be related to this African mammal also a heavyweight",
+          "New evidence says the whale may be related to this African mammal, also a heavyweight",
         answer: "Hippopotamus",
       },
       {
@@ -61,7 +61,7 @@ const dataAlt8 = [
       {
         points: 500,
         question:
-          "In Internet domain name extensions gg stands for Alderney Sark & this other Channel Island",
+          "In Internet domain name extensions, gg stands for Alderney Sark & this other Channel Island",
         answer: "Guernsey",
       },
     ],
@@ -77,7 +77,7 @@ const dataAlt8 = [
       {
         points: 200,
         question:
-          "In an older car try using a pair of panty hose as a substitute for a broken one of these just behind your car radiator",
+          "In an older car, try using a pair of panty hose as a substitute for a broken one of these just behind your car radiator",
         answer: "Fan Belt",
       },
       {
@@ -144,7 +144,7 @@ const dataAlt8 = [
       {
         points: 200,
         question:
-          "The holy grail of the NHL it's named for a governor-general of Canada",
+          "The holy grail of the NHL, it's named for a governor-general of Canada",
         answer: "Stanley Cup",
       },
       {

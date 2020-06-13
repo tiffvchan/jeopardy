@@ -22,7 +22,7 @@ const dataAlt6 = [
       {
         points: 400,
         question:
-          "Known as Jumpman when introduced in Donkey Kong this video game character has since appeared in over 70 games",
+          "Known as Jumpman when introduced in Donkey Kong, this video game character has since appeared in over 70 games",
         answer: "Mario",
       },
       {
@@ -74,7 +74,7 @@ const dataAlt6 = [
       {
         points: 100,
         question:
-          "In India most women wear this outer garment that consists of a piece of cloth that's draped around the body",
+          "In India, most women wear this outer garment that consists of a piece of cloth that's draped around the body",
         answer: "Sari",
       },
       {
@@ -115,13 +115,13 @@ const dataAlt6 = [
       {
         points: 200,
         question:
-          "Probably the first fish raised in captivity the rainbow species of this fish is most commonly found on farms",
+          "Probably the first fish raised in captivity, the rainbow species of this fish is most commonly found on farms",
         answer: "Trout",
       },
       {
         points: 300,
         question:
-          "Calamari another name for this mollusk with an edible ink comes from the Latin for writing pen",
+          "Calamari, another name for this mollusk with an edible ink comes from the Latin for writing pen",
         answer: "Squid",
       },
       {

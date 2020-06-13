@@ -5,13 +5,13 @@ const dataAlt4 = [
       {
         points: 200,
         question:
-          "Stated otherwise this metaphor might be pouring down Manx & Poodles",
+          "Stated otherwise, this metaphor might be pouring down Manx & Poodles",
         answer: "Raining Cats & Dogs",
       },
       {
         points: 400,
         question:
-          "Standing in the relative peace of the beach you'd experience this idiom of impending turmoil",
+          "Standing in the relative peace of the beach, you'd experience this idiom of impending turmoil",
         answer: "Calm before the Storm",
       },
       {
@@ -39,13 +39,13 @@ const dataAlt4 = [
       {
         points: 200,
         question:
-          "Pencils have been around for centuries but this aid wasn't patented until 1828 using metal files set at 90°",
+          "Pencils have been around for centuries, but this aid wasn't patented until 1828 using metal files set at 90°",
         answer: "Pencil Sharpener",
       },
       {
         points: 400,
         question:
-          "In 1908 Faber-Castell one of the oldest pencil brands introduced the Polychromos line of these",
+          "In 1908, Faber-Castell one of the oldest pencil brands introduced the Polychromos line of these",
         answer: "Coloured Pencils",
       },
       {
@@ -57,14 +57,14 @@ const dataAlt4 = [
       {
         points: 800,
         question:
-          "Called plugs by manufacturers these were first attached to pencils in 1858",
+          "Called plugs by manufacturers, these were first attached to pencils in 1858",
         answer: "Erasers",
       },
       {
         points: 1000,
         question:
-          "AKA china marker this waxy-tipped pencil is said to be what the Soviets used in space because ballpoints require gravity",
-        answer: "Grease Pens",
+          "AKA china marker, this waxy-tipped pencil is said to be what the Soviets used in space because ballpoints require gravity",
+        answer: "Grease Pen",
       },
     ],
   },
@@ -73,20 +73,19 @@ const dataAlt4 = [
     questions: [
       {
         points: 200,
-        question:
-          "At Canter's Deli in L.A. it's the traditional cheese for a Reuben sandwich",
+        question: "It's the traditional cheese for a Reuben sandwich",
         answer: "Swiss",
       },
       {
         points: 400,
         question:
-          "More a thick cream than a cheese this slightly sweet Italian staple traditionally fills the layers in tiramisu",
+          "More a thick cream than a cheese, this slightly sweet Italian staple traditionally fills the layers in tiramisu",
         answer: "Mascarpone",
       },
       {
         points: 600,
         question:
-          "Sort of a blue Brie Germany's Cambozola cheese gets its name from Camembert & this cheese",
+          "Sort of a blue Brie, Germany's Cambozola cheese gets its name from Camembert & this cheese",
         answer: "Gorgonzola",
       },
       {
@@ -142,7 +141,7 @@ const dataAlt4 = [
       {
         points: 200,
         question:
-          "Fittingly you speak of driving this the number of people viewing a website",
+          "Fittingly, you speak of driving this the number of people viewing a website",
         answer: "Traffic",
       },
       {

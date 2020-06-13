@@ -16,7 +16,7 @@ const dataAlt4 = [
       {
         points: 300,
         question:
-          "Costing a fraction of the price one of the most popular diamond substitutes is cubic this",
+          "Costing a fraction of the price, one of the most popular diamond substitutes is cubic this",
         answer: "Zirconia",
       },
       {
@@ -84,7 +84,7 @@ const dataAlt4 = [
       },
       {
         points: 400,
-        question: "A chess piece a day's beginning & a sign of boredom",
+        question: "A chess piece, a day's beginning & a sign of boredom",
         answer: "Pawn Dawn Yawn",
       },
       {
@@ -107,7 +107,7 @@ const dataAlt4 = [
       {
         points: 200,
         question:
-          "As well as a duck bill this Aussie monotreme has a cloaca an organ common in birds",
+          "As well as a duck bill, this Aussie monotreme has a cloaca an organ common in birds",
         answer: "Platypus",
       },
       {

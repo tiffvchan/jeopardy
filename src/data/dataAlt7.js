@@ -5,7 +5,7 @@ const dataAlt7 = [
       {
         points: 200,
         question:
-          "In 1986 she topped the charts with How Will I Know & The Greatest Love of All",
+          "In 1986, she topped the charts with How Will I Know & The Greatest Love of All",
         answer: "Whitney Houston",
       },
       {
