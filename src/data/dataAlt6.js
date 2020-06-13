@@ -39,8 +39,8 @@ const dataAlt6 = [
       {
         points: 100,
         question:
-          "England won in 1966 when the final game went into this but not as far as penalty kicks",
-        answer: "A Shootout",
+          "Also a term used in baseball it's what the Brits call a soccer field",
+        answer: "Pitch",
       },
       {
         points: 200,
