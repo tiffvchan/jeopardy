@@ -131,36 +131,32 @@ const data = [
     ],
   },
   {
-    category: "Wish You Were Here",
+    category: "Their Debut Albums",
     questions: [
       {
         points: 100,
-        question:
-          "This person is currently coworkers with another in the group, but he can’t quite ‘tap’ on their shoulder because he lives on the opposite coast.",
-        answer: "Jon Yim",
+        question: "2008: 19",
+        answer: "Adele",
       },
       {
         points: 200,
-        question:
-          "Wow! Can’t believe they have 14 aunts and uncles before in-laws.",
-        answer: "Will Co",
+        question: "2004: Hot Fuss",
+        answer: "The Killers",
       },
       {
         points: 300,
-        question:
-          "Hi-Ya!! Don’t mess with them, they’ve got a yellow belt in Karate.",
-        answer: "Tyler Hall",
+        question: "2001: Is This It",
+        answer: "The Strokes",
       },
       {
         points: 400,
-        question: "You belong with me, they’ve held hands with T-swift.",
-        answer: "Rose Li",
+        question: "2004: The College Dropout",
+        answer: "Kanye West",
       },
       {
         points: 500,
-        question:
-          "Turn the volume up, they’ve been a live sound engineer for years",
-        answer: "Joshua Hsieh",
+        question: "2008: The Fame",
+        answer: "Lady Gaga",
       },
     ],
   },
@@ -169,32 +165,36 @@ const data = [
 export default data;
 
 // {
-//   category: "Their Debut Albums",
+//   category: "Wish You Were Here",
 //   questions: [
 //     {
 //       points: 100,
-//       question: "2008: 19",
-//       answer: "Adele",
+//       question:
+//         "This person is currently coworkers with another in the group, but he can’t quite ‘tap’ on their shoulder because he lives on the opposite coast.",
+//       answer: "Jon Yim",
 //     },
 //     {
 //       points: 200,
-//       question: "2004: Hot Fuss",
-//       answer: "The Killers",
+//       question:
+//         "Wow! Can’t believe they have 14 aunts and uncles before in-laws.",
+//       answer: "Will Co",
 //     },
 //     {
 //       points: 300,
-//       question: "2001: Is This It",
-//       answer: "The Strokes",
+//       question:
+//         "Hi-Ya!! Don’t mess with them, they’ve got a yellow belt in Karate.",
+//       answer: "Tyler Hall",
 //     },
 //     {
 //       points: 400,
-//       question: "2004: The College Dropout",
-//       answer: "Kanye West",
+//       question: "You belong with me, they’ve held hands with T-swift.",
+//       answer: "Rose Li",
 //     },
 //     {
 //       points: 500,
-//       question: "2008: The Fame",
-//       answer: "Lady Gaga",
+//       question:
+//         "Turn the volume up, they’ve been a live sound engineer for years",
+//       answer: "Joshua Hsieh",
 //     },
 //   ],
 // },
