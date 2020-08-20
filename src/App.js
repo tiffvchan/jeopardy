@@ -81,6 +81,7 @@ function App() {
 
   useEffect(() => {
     setNewGame(0);
+    // eslint-disable-next-line
   }, []);
 
   const handlesClick = (num) => {
