@@ -14,6 +14,8 @@ import dataAlt6 from "./data/dataAlt6";
 import dataAlt7 from "./data/dataAlt7";
 import dataAlt8 from "./data/dataAlt8";
 import dataAlt9 from "./data/dataAlt9";
+import dataAlt10 from "./data/dataAlt10";
+import dataAlt11 from "./data/dataAlt11";
 import finaljep from "./data/finaljep";
 import introMusic from "./assets/music/intro.mp3";
 
@@ -28,6 +30,8 @@ const gameData = [
   dataAlt7,
   dataAlt8,
   dataAlt9,
+  dataAlt10,
+  dataAlt11,
 ];
 
 function App() {

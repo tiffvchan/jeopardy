@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to See Answer Keys For Each Game
+In Category.js, set flipped to 'true' in the useEffect. 
+In Card.js, change 'points' to 'answer' in the return
+Follow instructions in Card.scss to adjust font
+
 ## Available Scripts
 
 In the project directory, you can run:

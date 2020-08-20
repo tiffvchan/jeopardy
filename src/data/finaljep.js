@@ -120,6 +120,17 @@ const finaljep = [
       },
     ],
   },
+  {
+    category: "Business and Industry",
+    questions: [
+      {
+        points: 9000,
+        question:
+          "McDonald's' 2 most successful promotional campaigns both involved these happy meal toys",
+        answer: "(Teenie) Beanie Babies",
+      },
+    ],
+  },
 ];
 
 export default finaljep;

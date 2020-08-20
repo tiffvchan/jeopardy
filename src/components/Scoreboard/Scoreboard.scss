@@ -21,6 +21,9 @@
     width: 25px;
     height: 25px;
     cursor: pointer;
+    @include lg-desktop {
+      right: 100px;
+    }
   }
   &__form {
     @include flex-center;
