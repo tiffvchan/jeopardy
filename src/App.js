@@ -18,6 +18,8 @@ import dataAlt10 from "./data/dataAlt10";
 import dataAlt11 from "./data/dataAlt11";
 import finaljep from "./data/finaljep";
 import introMusic from "./assets/music/intro.mp3";
+import rallylogo from "./assets/img/rallylogo.png";
+import rallymascot from "./assets/img/rallymascot.png";
 
 const gameData = [
   data,
@@ -99,12 +101,15 @@ function App() {
   return (
     <div className="app">
       {playIntro && <audio autoplay="autoplay" src={introMusic}></audio>}
-      <h1
-        className={`app__heading ${playIntro ? "app__heading--active" : ""}`}
-        onClick={handlesMusicClick}
-      >
-        Jeopardy!
-      </h1>
+      <div className="app__heading-wrap">
+        <img className="app__heading-img" src={rallymascot} alt="rallylogo" />
+        <h1
+          className={`app__heading ${playIntro ? "app__heading--active" : ""}`}
+          onClick={handlesMusicClick}
+        >
+          Rally Jeopardy!
+        </h1>
+      </div>
       {finalJeopardyStatus === true ? (
         <FinalJeopardy finalJeopardyQ={finalJepQ} />
       ) : (

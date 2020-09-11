@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import logo from "../../assets/img/brainstation.png";
 import CardModal from "../CardModal/CardModal";
 import "./Card.scss";
+import rallylogowdocfade from "../../assets/img/rallylogowdocfade.svg";
 
 const Card = ({
   question,
@@ -57,7 +58,7 @@ const Card = ({
           className="card card--front card--completed"
           onClick={handlesClick}
         >
-          <img className="card__image" alt="logo" src={logo} />
+          <img className="card__image" alt="logo" src={rallylogowdocfade} />
         </div>
       )}
       {isOpen && (

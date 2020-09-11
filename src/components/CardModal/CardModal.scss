@@ -45,10 +45,13 @@
   width: 600px;
   &__image {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 100px;
-    height: 100px;
+    // bottom: 0px;
+    // right: 0px;
+    bottom: 20px;
+    right: 20px;
+    width: 75px;
+    // width: 100px;
+    // height: 100px;
     object-fit: cover;
     cursor: pointer;
     &:hover {

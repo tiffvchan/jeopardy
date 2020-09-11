@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "../Card/Card";
 import "./Category.scss";
 import whitelogo from "../../assets/img/brainstation-white.png";
+import rallylogowdoc from "../../assets/img/rallylogowdoc.svg";
 
 const Category = ({ category, addToRevealed, currGame }) => {
   const [flipped, setFlipped] = useState(false);
@@ -21,7 +22,7 @@ const Category = ({ category, addToRevealed, currGame }) => {
           <img
             alt="front-logo"
             className="category__name-img"
-            src={whitelogo}
+            src={rallylogowdoc}
             onClick={handlesFlip}
           />
         </div>
