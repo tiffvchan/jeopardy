@@ -18,7 +18,6 @@ import dataAlt10 from "./data/dataAlt10";
 import dataAlt11 from "./data/dataAlt11";
 import finaljep from "./data/finaljep";
 import introMusic from "./assets/music/intro.mp3";
-import rallylogo from "./assets/img/rallylogo.png";
 import rallymascot from "./assets/img/rallymascot.png";
 
 const gameData = [

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../assets/img/brainstation.png";
+// import logo from "../../assets/img/brainstation.png";
 import CardModal from "../CardModal/CardModal";
 import "./Card.scss";
 import rallylogowdocfade from "../../assets/img/rallylogowdocfade.svg";
