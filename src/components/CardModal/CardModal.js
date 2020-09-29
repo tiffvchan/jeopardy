@@ -1,10 +1,10 @@
 import React from "react";
 import Modal from "react-modal";
-// import logo from "../../assets/img/brainstation.png";
+import logo from "../../assets/img/brainstation.png";
+// import rallydoc from "../../assets/img/rallydoc.svg";
 import "./CardModal.scss";
 import CardTimer from "../CardTimer/CardTimer";
 import dailydoubleimg from "../../assets/img/dailydouble.png";
-import rallydoc from "../../assets/img/rallydoc.svg";
 import dailydoublesound from "../../assets/music/dailydouble.mp3";
 
 Modal.setAppElement("#root");
@@ -63,7 +63,7 @@ const CardModal = ({
       <img
         className="cardmodal__image"
         alt="logo"
-        src={rallydoc}
+        src={logo}
         onClick={closeCardModal}
       />
     </Modal>
