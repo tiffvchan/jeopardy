@@ -64,9 +64,19 @@ button {
       animation: xmas-font 4s 0.5s infinite;
     }
   }
+  &__snowControl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    margin: 10px;
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
   &__gif {
     display: none;
-    // animation: rightToLeft 10s 5s infinite;
 
     &-visible {
       display: unset;
@@ -74,10 +84,6 @@ button {
       overflow-x: hidden;
       z-index: 10;
       right: -480px;
-      // top: 0;
-      // right: 0;
-      // right: 0%;
-      // transform: translateX(-100%);
       
       animation: rightToLeft 15s 1s ease-in infinite;
     }
