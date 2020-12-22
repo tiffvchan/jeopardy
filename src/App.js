@@ -108,7 +108,7 @@ function App() {
 
   return (
     <div className="app">
-      <img className="app__snowControl" src={snowflake} onClick={handlesSnowfall}/>
+      <img className="app__snowControl" src={snowflake} alt="snowflake" onClick={handlesSnowfall}/>
       <img src={"https://www.animatedimages.org/data/media/359/animated-santa-claus-image-0420.gif"} className={`app__gif ${playIntro ? "app__gif-visible" : ""}`} alt="santa"/>
       {snowfall && 
       <Snowfall 
