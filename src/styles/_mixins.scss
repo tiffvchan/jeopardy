@@ -169,3 +169,28 @@
 91.667%     { color: #ff0080; }
 100.00%     { color: #ff0000; }
 }
+
+@keyframes xmas-font {
+  0%     { color: #B3000C; }
+8.333%     { color: #006400; }
+16.667%     { color: #B3000C;}
+25.000%     { color: #006400; }
+33.333%     { color: #B3000C; }
+41.667%     { color: #006400; }
+50.000%     { color: #B3000C; }
+58.333%     { color: #006400; }
+66.667%     { color: #B3000C; }
+75.000%     { color: #006400; }
+83.333%     { color: #B3000C;}
+91.667%     { color: #006400; }
+100.00%     { color: #B3000C; }
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(-3000px,0);
+  }
+}

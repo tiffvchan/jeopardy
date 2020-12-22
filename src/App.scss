@@ -9,8 +9,27 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: black;
   color: $white;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: black; 
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgrey; 
 }
 
 // button reset
@@ -34,13 +53,38 @@ button {
     text-align: center;
     margin: $spacing-med 0;
     cursor: pointer;
+    & span:nth-of-type(even){
+      color:green;
+    }
+    & span:nth-of-type(odd){
+      color:red;
+    }
     &--active {
-      animation: rainbow-font 1s 0.5s infinite;
+      // animation: rainbow-font 1s 0.5s infinite;
+      animation: xmas-font 4s 0.5s infinite;
+    }
+  }
+  &__gif {
+    display: none;
+    // animation: rightToLeft 10s 5s infinite;
+
+    &-visible {
+      display: unset;
+      position: absolute;
+      overflow-x: hidden;
+      z-index: 10;
+      right: -480px;
+      // top: 0;
+      // right: 0;
+      // right: 0%;
+      // transform: translateX(-100%);
+      
+      animation: rightToLeft 15s 1s ease-in infinite;
     }
   }
   &__heading-img {
-    height: 110px;
-    // width: 200px;
+    // height: 110px;
+    width: 150px;
     object-fit: cover;
     margin-right: 16px;
   }

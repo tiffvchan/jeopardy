@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+// for the snowfall
+import Snowfall from 'react-snowfall';
 import "./App.scss";
 import Category from "./components/Category/Category";
 import FinalJeopardy from "./components/FinalJeopardy/FinalJeopardy";
@@ -18,7 +20,7 @@ import dataAlt10 from "./data/dataAlt10";
 import dataAlt11 from "./data/dataAlt11";
 import finaljep from "./data/finaljep";
 import introMusic from "./assets/music/intro.mp3";
-// import rallymascot from "./assets/img/rallymascot.png";
+import rallymascot from "./assets/img/xmasrallymascot.png";
 
 const gameData = [
   data,
@@ -97,17 +99,23 @@ function App() {
     setPlayIntro(!playIntro);
   };
 
+
   return (
     <div className="app">
+      <img src={"https://www.animatedimages.org/data/media/359/animated-santa-claus-image-0420.gif"} className={`app__gif ${playIntro ? "app__gif-visible" : ""}`} alt="santa"/>
+      <Snowfall 
+      snowflakeCount={200}
+      />
       {playIntro && <audio autoplay="autoplay" src={introMusic}></audio>}
       <div className="app__heading-wrap">
-        {/* <img className="app__heading-img" src={rallymascot} alt="rallylogo" /> */}
+        <img className="app__heading-img" src={rallymascot} alt="rallylogo" />
         <h1
           className={`app__heading ${playIntro ? "app__heading--active" : ""}`}
           onClick={handlesMusicClick}
         >
-          Jeopardy!
+          Rally Jeopardy!
         </h1>
+
       </div>
       {finalJeopardyStatus === true ? (
         <FinalJeopardy finalJeopardyQ={finalJepQ} />
