@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Card from "../Card/Card";
 import "./Category.scss";
-import rallylogowdoc from "../../assets/img/rallylogowdoc.svg";
-
+// import rallylogowdoc from "../../assets/img/rallylogowdoc.svg";
+import beer from "../../assets/icons/beer.svg";
 // import whitelogo from "../../assets/img/brainstation-white.png";
 
 const Category = ({ category, addToRevealed, currGame }) => {
@@ -23,7 +23,7 @@ const Category = ({ category, addToRevealed, currGame }) => {
           <img
             alt="front-logo"
             className="category__name-img"
-            src={rallylogowdoc}
+            src={beer}
             onClick={handlesFlip}
           />
         </div>

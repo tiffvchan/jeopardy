@@ -20,8 +20,9 @@ import dataAlt10 from "./data/dataAlt10";
 import dataAlt11 from "./data/dataAlt11";
 import finaljep from "./data/finaljep";
 import introMusic from "./assets/music/intro.mp3";
-import rallymascot from "./assets/img/xmasrallymascot.png";
+// import rallymascot from "./assets/img/xmasrallymascot.png";
 import snowflake from "./assets/icons/snowflakeicon.svg";
+import santa from "./assets/img/drunksanta.png";
 
 const gameData = [
   data,
@@ -117,12 +118,12 @@ function App() {
       }
       {playIntro && <audio autoplay="autoplay" src={introMusic}></audio>}
       <div className="app__heading-wrap">
-        <img className="app__heading-img" src={rallymascot} alt="rallylogo" />
+        <img className="app__heading-img" src={santa} alt="rallylogo" />
         <h1
           className={`app__heading ${playIntro ? "app__heading--active" : ""}`}
           onClick={handlesMusicClick}
         >
-          Rally Jeopardy!
+          Strong Christmas 2020
         </h1>
 
       </div>
