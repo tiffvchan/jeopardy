@@ -1,7 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
-// import logo from "../../assets/img/brainstation.png";
-import snowman from "../../assets/img/snowman.png";
+import logo from "../../assets/img/brainstation.png";
+// import snowman from "../../assets/img/snowman.png";
 // import rallydoc from "../../assets/img/rallydoc.svg";
 import "./CardModal.scss";
 import CardTimer from "../CardTimer/CardTimer";
@@ -64,7 +64,7 @@ const CardModal = ({
       <img
         className="cardmodal__image"
         alt="logo"
-        src={snowman}
+        src={logo}
         onClick={closeCardModal}
       />
     </Modal>

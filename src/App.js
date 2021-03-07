@@ -22,7 +22,7 @@ import finaljep from "./data/finaljep";
 import introMusic from "./assets/music/intro.mp3";
 // import rallymascot from "./assets/img/xmasrallymascot.png";
 import snowflake from "./assets/icons/snowflakeicon.svg";
-import santa from "./assets/img/drunksanta.png";
+// import santa from "./assets/img/drunksanta.png";
 
 const gameData = [
   data,
@@ -110,7 +110,7 @@ function App() {
   return (
     <div className="app">
       <img className="app__snowControl" src={snowflake} alt="snowflake" onClick={handlesSnowfall}/>
-      <img src={"https://www.animatedimages.org/data/media/359/animated-santa-claus-image-0420.gif"} className={`app__gif ${playIntro ? "app__gif-visible" : ""}`} alt="santa"/>
+      {/* <img src={"https://www.animatedimages.org/data/media/359/animated-santa-claus-image-0420.gif"} className={`app__gif ${playIntro ? "app__gif-visible" : ""}`} alt="santa"/> */}
       {snowfall && 
       <Snowfall 
       snowflakeCount={200}
@@ -118,12 +118,12 @@ function App() {
       }
       {playIntro && <audio autoplay="autoplay" src={introMusic}></audio>}
       <div className="app__heading-wrap">
-        <img className="app__heading-img" src={santa} alt="rallylogo" />
+        {/* <img className="app__heading-img" src={santa} alt="rallylogo" /> */}
         <h1
           className={`app__heading ${playIntro ? "app__heading--active" : ""}`}
           onClick={handlesMusicClick}
         >
-          Strong Christmas 2020
+          Jeopardy
         </h1>
 
       </div>
