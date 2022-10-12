@@ -7,13 +7,13 @@
   flex-wrap: wrap;
   margin: $spacing-med 0;
   padding: $spacing-sm 0;
-  width: 750px;
-  @include desktop {
-    width: 65vw;
-  }
-  @include lg-desktop {
-    width: 90vw;
-  }
+  width: 1000px;
+  // @include desktop {
+  //   width: 65vw;
+  // }
+  // @include lg-desktop {
+  //   width: 90vw;
+  // }
   &__reset {
     position: absolute;
     bottom: 5px;

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Card from "../Card/Card";
 import "./Category.scss";
-// import rallylogowdoc from "../../assets/img/rallylogowdoc.svg";
+import rallylogowdoc from "../../assets/img/rallylogowdoc.svg";
 // import beer from "../../assets/icons/beer.svg";
-import whitelogo from "../../assets/img/brainstation-white.png";
+// import whitelogo from "../../assets/img/brainstation-white.png";
 
-const Category = ({ category, addToRevealed, currGame }) => {
+const Category = ({ category, addToRevealed, currGame, useRoom }) => {
   const [flipped, setFlipped] = useState(false);
 
   const handlesFlip = () => {
@@ -23,7 +23,7 @@ const Category = ({ category, addToRevealed, currGame }) => {
           <img
             alt="front-logo"
             className="category__name-img"
-            src={whitelogo}
+            src={rallylogowdoc}
             onClick={handlesFlip}
           />
         </div>
@@ -37,9 +37,10 @@ const Category = ({ category, addToRevealed, currGame }) => {
           </h2>
         </div>
       )}
-      {category.questions.map((card) => {
+      {category.questions.map((card, index) => {
         return (
           <Card
+            key={index}
             question={card.question}
             points={card.points}
             answer={card.answer}
@@ -47,6 +48,7 @@ const Category = ({ category, addToRevealed, currGame }) => {
             addToRevealed={addToRevealed}
             timerDuration={10}
             currGame={currGame}
+            useRoom={useRoom}
           />
         );
       })}
