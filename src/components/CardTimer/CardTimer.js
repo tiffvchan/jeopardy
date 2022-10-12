@@ -29,9 +29,9 @@ const CardTimer = ({ timerDuration }) => {
     <div className="CardTimer">
       <p className="CardTimer__text">{timer}</p>
       {!finalJep && timer === "" && (
-        <audio autoplay="autoplay" src={timesup}></audio>
+        <audio autoPlay="autoplay" src={timesup}></audio>
       )}
-      {finalJep && <audio autoplay="autoplay" src={thinkingmusic}></audio>}
+      {finalJep && <audio autoPlay="autoplay" src={thinkingmusic}></audio>}
     </div>
   );
 };

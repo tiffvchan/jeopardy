@@ -1,8 +1,8 @@
 import React from "react";
 import Modal from "react-modal";
-import logo from "../../assets/img/brainstation.png";
+// import logo from "../../assets/img/brainstation.png";
 // import snowman from "../../assets/img/snowman.png";
-// import rallydoc from "../../assets/img/rallydoc.svg";
+import rallydoc from "../../assets/img/rallydoc.svg";
 import "./CardModal.scss";
 import CardTimer from "../CardTimer/CardTimer";
 import dailydoubleimg from "../../assets/img/dailydouble.png";
@@ -39,7 +39,7 @@ const CardModal = ({
               alt="dailydouble"
               src={dailydoubleimg}
             />
-            <audio autoplay="autoplay" src={dailydoublesound}></audio>
+            <audio autoPlay="autoplay" src={dailydoublesound}></audio>
           </>
         ) : status === "points" ? (
           <p className="cardmodal__text cardmodal__text--points">{points}</p>
@@ -64,7 +64,7 @@ const CardModal = ({
       <img
         className="cardmodal__image"
         alt="logo"
-        src={logo}
+        src={rallydoc}
         onClick={closeCardModal}
       />
     </Modal>

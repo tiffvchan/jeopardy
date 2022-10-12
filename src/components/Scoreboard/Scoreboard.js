@@ -53,7 +53,7 @@ const Scoreboard = () => {
               <label className="scoreboard__label">Number of Teams</label>
               <div className="scoreboard__input-wrap">
                 <input
-                  class="scoreboard__input"
+                  className="scoreboard__input"
                   type="number"
                   name="numberTeams"
                   required

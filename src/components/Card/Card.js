@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../assets/img/brainstation.png";
+// import logo from "../../assets/img/brainstation.png";
 import CardModal from "../CardModal/CardModal";
 import "./Card.scss";
+import {
+  doc,
+  updateDoc,
+} from "firebase/firestore";
+import { useFirestore } from "reactfire";
+
 // import toast from "../../assets/icons/toast.svg";
-// import rallylogowdocfade from "../../assets/img/rallylogowdocfade.svg";
+import rallylogowdocfade from "../../assets/img/rallylogowdocfade.svg";
 
 const Card = ({
   question,
@@ -13,10 +19,14 @@ const Card = ({
   timerDuration,
   dailydouble,
   currGame,
+  useRoom
 }) => {
   const [flipped, setFlipped] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [status, setStatus] = useState("points");
+
+  const firestore = useFirestore();
+  const { id: roomId } = useRoom();
 
   const handlesClick = () => {
     setIsOpen(true);
@@ -29,15 +39,20 @@ const Card = ({
     setStatus("points");
   }, [currGame]);
 
-  const handlesCardClick = () => {
+  const handlesCardClick = async () => {
     if (status === "points" || dailydouble) {
       setStatus("question");
     }
     if (status === "question") {
       setStatus("timer");
+      const roomRef = doc(firestore, "rooms", roomId);
+      if (!dailydouble) {
+        updateDoc(roomRef, { enableBuzzers: true });
+      }
     }
     if (status === "timer") {
       setStatus("answer");
+
     }
   };
 
@@ -59,7 +74,7 @@ const Card = ({
           className="card card--front card--completed"
           onClick={handlesClick}
         >
-          <img className="card__image" alt="logo" src={logo} />
+          <img className="card__image" alt="logo" src={rallylogowdocfade} />
         </div>
       )}
       {isOpen && (

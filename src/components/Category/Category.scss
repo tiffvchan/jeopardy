@@ -27,12 +27,13 @@
   }
   &__name-img {
     // width below for rally logo
-    // width: 120px;
+    width: 120px;
     // width and margin below for beer
     // width: 80px;
     // margin-left: 12px;
-    width: 100px;
-    height: 85px;
+    // width for default brainstation logo
+    // width: 100px;
+    // height: 85px;
     object-fit: cover;
   }
 }

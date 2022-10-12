@@ -12,6 +12,7 @@ body {
   overflow-x: hidden;
   background-color: black;
   color: $white;
+  font-family: Roboto;
 }
 
 ::-webkit-scrollbar {
@@ -53,15 +54,15 @@ button {
     text-align: center;
     margin: $spacing-med 0;
     cursor: pointer;
-    & span:nth-of-type(even){
-      color:green;
-    }
-    & span:nth-of-type(odd){
-      color:red;
-    }
+    // & span:nth-of-type(even){
+    //   color:green;
+    // }
+    // & span:nth-of-type(odd){
+    //   color:red;
+    // }
     &--active {
-      // animation: rainbow-font 1s 0.5s infinite;
-      animation: xmas-font 4s 0.5s infinite;
+      animation: rainbow-font 1s 0.5s infinite;
+      // animation: xmas-font 4s 0.5s infinite;
     }
   }
   &__snowControl {
@@ -96,25 +97,23 @@ button {
   }
   &__cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
   &__games {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
   &__button-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // justify-content: space-around;
-    @include desktop {
-      height: 100px;
-      width: 750px;
-      width: 80vw;
-    }
+    max-width: 750px;
   }
   &__button-finaljep {
     @include button-secondary;
+    width: 200px;
     padding: 0 $spacing-sm;
     background-color: $brainstation-blue;
     color: white;
