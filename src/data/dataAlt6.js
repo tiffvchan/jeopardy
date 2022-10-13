@@ -34,72 +34,37 @@ const dataAlt6 = [
     ],
   },
   {
-    category: "Soccer's World Cup",
+    category: "Unscramble Kids/Pets",
     questions: [
       {
         points: 100,
         question:
-          "Also a term used in baseball it's what the Brits call a soccer field",
-        answer: "Pitch",
+          "BNU",
+        answer: "BUN",
       },
       {
         points: 200,
         question:
-          "2 of its last 3 World Cup wins were over Italy in the finals",
-        answer: "Brazil",
+          "EIPRP",
+        answer: "PIPER",
       },
       {
         points: 300,
         question:
-          "In 1994 the year this country hosted 147 nations participated",
-        answer: "The United States",
+          "TSIO",
+        answer: "OTIS",
       },
       {
         points: 400,
         question:
-          "In 1938 it became the first host country not to make it to the finals; it didn't make that mistake in 1998 (it won!)",
-        answer: "France",
+          "NERDBAN",
+        answer: "BRENDAN",
       },
       {
         points: 500,
         question:
-          "This country that no longer exists made it to the finals 6 times winning in 1954 1974 & 1990",
-        answer: "West Germany",
-      },
-    ],
-  },
-  {
-    category: "Ends In I",
-    questions: [
-      {
-        points: 100,
-        question:
-          "In India, most women wear this outer garment that consists of a piece of cloth that's draped around the body",
-        answer: "Sari",
-      },
-      {
-        points: 200,
-        question:
-          "Not surprisingly people born under this Zodiac sign have a 2-sided personality",
-        answer: "Gemini",
-      },
-      {
-        points: 300,
-        question:
-          "Better have a breath mint after eating this Italian-named dish of shrimp sauteed in garlic & butter",
-        answer: "Scampi",
-      },
-      {
-        points: 400,
-        question:
-          "Drumroll please... it's another name for a set of kettledrums",
-        answer: "Timpani",
-      },
-      {
-        points: 500,
-        question:
-          "It remains the most popular of the classical forms of Japanese theater",
-        answer: "Kabuki",
+          "RINIFGF",
+        answer: "GRIFFIN",
       },
     ],
   },
@@ -134,6 +99,41 @@ const dataAlt6 = [
         question:
           "Some connoisseurs prefer the flesh of the female spider one of these crustaceans",
         answer: "Crabs",
+      },
+    ],
+  },
+  {
+    category: "Rally People",
+    questions: [
+      {
+        points: 100,
+        question:
+          "Drinks Soylent, Hates going to the Post Office",
+        answer: "Scott",
+      },
+      {
+        points: 200,
+        question:
+          "Swim, Bike, Run, Repeat",
+        answer: "Mike",
+      },
+      {
+        points: 300,
+        question:
+          "Joins Happy Hour for the People, not the Games",
+        answer: "Bethany",
+      },
+      {
+        points: 400,
+        question:
+          "Rally's very own DIY Queen",
+        answer: "Meaghan",
+      },
+      {
+        points: 500,
+        question:
+          "Has had 4 different last names",
+        answer: "Natasha",
       },
     ],
   },

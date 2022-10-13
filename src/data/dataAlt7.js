@@ -1,6 +1,6 @@
 const dataAlt7 = [
   {
-    category: "No. 1 Hits",
+    category: "Big in Music",
     questions: [
       {
         points: 200,
@@ -11,56 +11,56 @@ const dataAlt7 = [
       {
         points: 400,
         question:
-          "1984s The Reflex was this band's first No. 1 song in the U.S.; Hungry Like The Wolf peaked at No. 3",
-        answer: "Duran Duran",
+          `Which astronomer is namedropped in "Bohemian Rhapsody"`,
+        answer: "Galileo",
       },
       {
         points: 600,
         question:
-          "This singer was habit-forming with his 1986 hit Addicted To Love",
-        answer: "Robert Palmer",
+          'This country artist recorded two of his best-selling albums in prison',
+        answer: "Johnny Cash",
       },
       {
         points: 800,
         question:
-          "The movie Buster starred this singer & drummer who hit No. 1 with Two Hearts the movie's theme",
-        answer: "Phil Collins",
+          "Lady Gaga got her stage name from a song by this rock band",
+        answer: "Queen",
       },
       {
         points: 1000,
         question:
-          "No. 1 songs from her Forever Your Girl album include the title track & Cold Hearted",
-        answer: "Paula Abdul",
+          "This female singer has had a Billboard No. 1 hit in each of the last four decades",
+        answer: "Mariah Carey",
       },
     ],
   },
   {
-    category: "Acronyms!",
+    category: "Rally Acronyms!",
     questions: [
       {
         points: 200,
-        question: "At the United Nations: WHO",
-        answer: "World Health Organization",
+        question: "RFB",
+        answer: "Rally for Business",
       },
       {
         points: 400,
-        question: "For fast-food lovers: A&W",
-        answer: "Allen & Wright",
+        question: "CAC",
+        answer: "Client Acquisition Cost",
       },
       {
         points: 600,
-        question: "In San Francisco: BART",
-        answer: "Bay Area Rapid Transit",
+        question: "KPI",
+        answer: "Key Performance Indicator",
       },
       {
         points: 800,
-        question: "To Neil Armstrong: NASA",
-        answer: "National Aeronautics and Space Administration",
+        question: "KYC",
+        answer: "Know Your Client",
       },
       {
         points: 1000,
-        question: "For cybergeeks: MS-DOS",
-        answer: "Microsoft - Disk Operating System",
+        question: "SR&ED",
+        answer: "Scientific Research and Experimental Development",
       },
     ],
   },
@@ -95,34 +95,34 @@ const dataAlt7 = [
     ],
   },
   {
-    category: "Ends in Um",
+    category: "RALLY START DATES 🗓️",
     questions: [
       {
         points: 200,
-        question: "The Louvre for example",
-        answer: "Museum",
+        question: "Feb 28, 2022",
+        answer: "Charli",
       },
       {
         points: 400,
         question:
-          "Term for the minimum number of people required at a meeting to conduct business legally",
-        answer: "A Quorum",
+          "May 10, 2021",
+        answer: "Kodey",
       },
       {
         points: 600,
-        question: "It's where you keep your guppies gourami & mollies",
-        answer: "Aquarium",
+        question: "Feb 7, 2022",
+        answer: "Chad",
       },
       {
         points: 800,
         question:
-          "This lightest metal is often used in the treatment of manic depression",
-        answer: "Lithium",
+          "June 17, 2019",
+        answer: "Drover",
       },
       {
         points: 1000,
-        question: "It's the point or support on which a lever pivots",
-        answer: "Fulcrum",
+        question: "June 8, 2020",
+        answer: "Kurt",
       },
     ],
   },
