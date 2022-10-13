@@ -8,7 +8,7 @@ const CardTimer = ({ timerDuration }) => {
   const [finalJep, setFinalJep] = useState(false);
 
   useEffect(() => {
-    if (timerDuration === 30) {
+    if (timerDuration === 60) {
       setFinalJep(true);
     }
   }, [timerDuration]);
@@ -31,7 +31,7 @@ const CardTimer = ({ timerDuration }) => {
       {!finalJep && timer === "" && (
         <audio autoPlay="autoplay" src={timesup}></audio>
       )}
-      {finalJep && <audio autoPlay="autoplay" src={thinkingmusic}></audio>}
+      {finalJep && <audio autoPlay="autoplay" src={thinkingmusic} loop={!!timer}></audio>}
     </div>
   );
 };

@@ -43,6 +43,13 @@ const JoinScreen = ({useBuzz, useGuest, useRoom, useUpdateGuest}) => {
     setEditName(false);
   }
 
+  const handleBuzz = () => {
+    !!enableBuzzers && !buzzed && buzz();
+    if (navigator.vibrate) {
+      navigator.vibrate(500);
+    }
+  }
+
   return (
     <>
       <BuzzerCard>
@@ -53,7 +60,7 @@ const JoinScreen = ({useBuzz, useGuest, useRoom, useUpdateGuest}) => {
             <UpdateButton type='submit' onClick={handleSubmit}>Submit</UpdateButton>
           </InputWrapper>
         } 
-        <BuzzerButton buzzed={!!buzzed} onClick={() => { !!enableBuzzers && buzz()}}>
+        <BuzzerButton buzzed={!!buzzed} onClick={() => handleBuzz()}>
           {!!buzzed &&
             <DefaultText>Buzzed!</DefaultText>
           }

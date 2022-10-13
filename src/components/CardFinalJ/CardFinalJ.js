@@ -45,7 +45,7 @@ const CardFinalJ = ({ finalJeopardyQ }) => {
           <p className="cardfinal__text">
             {finalJeopardyQ.questions[0].question}
           </p>
-          <CardTimer timerDuration={30} />
+          <CardTimer timerDuration={60} />
         </div>
       ) : (
         <div className="cardfinal cardfinal--answer" onClick={handlesClick}>
